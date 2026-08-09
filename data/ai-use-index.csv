@@ -1,2 +1,3 @@
 id,date,time,tool,model,purpose,prompt_file,output_used,ai_generated_code,artifacts,git_commit,pull_request,human_review,disclosure_status,notes
 AI-2026-001,2026-08-08,2026-08-08T23:36:07-04:00,Codex,unknown,Set up generative-AI research usage logging and provenance infrastructure,docs/ai-use/prompts/AI-2026-001.md,Yes,Yes,AGENTS.md; docs/ai-use/; data/ai-use-index.csv; scripts/new_ai_log.py; docs/experiment-schema.md,,,Researcher review pending,TBD,
+AI-2026-002,2026-08-08,2026-08-08T23:41:58-04:00,Codex,unknown,Initialize the rusty-eval repository and evaluation infrastructure,docs/ai-use/prompts/AI-2026-002.md,Yes,Yes,initial repository files,,,,,TBD,

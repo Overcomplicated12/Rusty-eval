@@ -47,7 +47,7 @@ def main() -> None:
     parser.add_argument("--tool", required=True)
     parser.add_argument("--model", required=True)
     parser.add_argument("--purpose", required=True)
-    parser.add_argument("--researcher", default="")
+    parser.add_argument("--researcher", default="Not recorded")
     parser.add_argument("--prompt-file", type=Path)
     args = parser.parse_args()
 
@@ -72,7 +72,7 @@ def main() -> None:
     ]
     new_file = not INDEX.exists() or INDEX.stat().st_size == 0
     with INDEX.open("a", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fields)
+        writer = csv.DictWriter(handle, fieldnames=fields, lineterminator="\n")
         if new_file:
             writer.writeheader()
         writer.writerow({
