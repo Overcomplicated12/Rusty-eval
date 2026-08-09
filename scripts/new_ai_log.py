@@ -66,7 +66,7 @@ def main() -> None:
     )
 
     fields = [
-        "id", "date", "time", "tool", "model", "purpose", "prompt_file", "output_used",
+        "id", "date", "time", "tool", "model", "researcher", "purpose", "prompt_file", "output_used",
         "ai_generated_code", "artifacts", "git_commit", "pull_request", "human_review",
         "disclosure_status", "notes",
     ]
@@ -77,7 +77,7 @@ def main() -> None:
             writer.writeheader()
         writer.writerow({
             "id": record_id, "date": now.date().isoformat(), "time": now.isoformat(timespec="seconds"),
-            "tool": args.tool, "model": args.model, "purpose": args.purpose,
+            "tool": args.tool, "model": args.model, "researcher": args.researcher, "purpose": args.purpose,
             "prompt_file": destination.relative_to(ROOT).as_posix(), "output_used": "TBD",
             "ai_generated_code": "TBD", "artifacts": "", "git_commit": "", "pull_request": "",
             "human_review": "", "disclosure_status": "TBD", "notes": "",

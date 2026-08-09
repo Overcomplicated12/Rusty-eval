@@ -1,0 +1,29 @@
+{
+  "run_id": "inventory-2026-08-08T234553-0400",
+  "application": "sqlite",
+  "application_commit": "ab5206d096d6ecc5f9ea2586889c07e52e852c23",
+  "rustycpp_commit": "488e422c293cdce3346f1ae3865ba588a74541e3",
+  "harness_commit": "be15ae47851e1ae6d6b804a8d3e6323145c5679a",
+  "ai_use_ids": ["AI-2026-003"],
+  "started_at": "2026-08-08T23:45:53-04:00",
+  "preflight_finished_at": "2026-08-08T23:46:49-04:00",
+  "inventory_execution_seconds": 0,
+  "preflight_and_methodology_assessment_seconds": 56,
+  "result": "BLOCKED_NO_APPROVED_INVENTORY_IMPLEMENTATION",
+  "failure_reason": "The approved repository methodology defines inventory constraints and buckets but provides no runnable scanner, classification rules, or deterministic manual-validation sampling procedure. The inventory modules explicitly state they are placeholders. No classifications were generated.",
+  "sqlite_worktree_state": "untracked .gitignore present before evaluation; left untouched",
+  "source_file_manifest": {
+    "included_extensions": [".c", ".h", ".in"],
+    "file_count": 530,
+    "sorted_path_list_sha256": "9d237539e8680589d3bee483eef7033abb3cb4ce8f0f0035654491e8c795a6b9"
+  },
+  "generated_outputs": [
+    "run.json",
+    "commands.md",
+    "manual-validation-sample.json",
+    "README.md"
+  ],
+  "source_modifications": false,
+  "rustycpp_conversion_performed": false,
+  "classification_rules_changed": false
+}

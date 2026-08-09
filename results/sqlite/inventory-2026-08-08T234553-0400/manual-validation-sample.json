@@ -1,0 +1,7 @@
+{
+  "run_id": "inventory-2026-08-08T234553-0400",
+  "status": "NOT_GENERATED",
+  "sample": [],
+  "reason": "No approved scanner produced classifications, and the approved methodology does not define a deterministic sampling procedure. Selecting files or findings would introduce a new methodology or apply unapproved judgment.",
+  "classifications_overridden": false
+}
