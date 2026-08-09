@@ -209,7 +209,8 @@ def scan(root: Path, source_dir: str, application: str, application_commit: str)
     return records
 
 
-def sample(records: list[Declaration], seed: int, requested: dict[Bucket, int] | None = None) -> dict[str, object]:
+def sample(records: list[Declaration], seed: int, requested: dict[Bucket, int] | None = None,
+           methodology_version: int = INVENTORY_METHODOLOGY_VERSION) -> dict[str, object]:
     """Sample each bucket independently using a seed derived from bucket identity."""
     requested = requested or DEFAULT_SAMPLE_COUNTS
     grouped: dict[Bucket, list[Declaration]] = defaultdict(list)
@@ -231,7 +232,7 @@ def sample(records: list[Declaration], seed: int, requested: dict[Bucket, int] |
                 "human_bucket": "", "human_notes": "", "agreement": "",
             } for item in selected],
         })
-    return {"inventory_methodology_version": INVENTORY_METHODOLOGY_VERSION, "seed": seed, "buckets": buckets}
+    return {"inventory_methodology_version": methodology_version, "seed": seed, "buckets": buckets}
 
 
 def _summary(records: list[Declaration], metadata: dict[str, object]) -> str:
@@ -260,10 +261,10 @@ def _summary(records: list[Declaration], metadata: dict[str, object]) -> str:
 
 
 def write_outputs(records: list[Declaration], output: Path, *, application: str, application_commit: str,
-                  seed: int) -> None:
+                  seed: int, methodology_version: int = INVENTORY_METHODOLOGY_VERSION) -> None:
     """Write JSON, CSV, summary Markdown, and a blank human-review sample."""
     output.mkdir(parents=True, exist_ok=True)
-    metadata = {"inventory_methodology_version": INVENTORY_METHODOLOGY_VERSION, "application": application,
+    metadata = {"inventory_methodology_version": methodology_version, "application": application,
                 "application_commit": application_commit}
     payload = {**metadata, "declarations": [record.to_dict() for record in records]}
     (output / "inventory.json").write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8")
@@ -274,13 +275,13 @@ def write_outputs(records: list[Declaration], output: Path, *, application: str,
         writer = csv.DictWriter(handle, fieldnames=fields, lineterminator="\n")
         writer.writeheader()
         for row in rows:
-            row["inventory_methodology_version"] = INVENTORY_METHODOLOGY_VERSION
+            row["inventory_methodology_version"] = methodology_version
             row["features"] = json.dumps(row["features"], sort_keys=True)
             row["secondary_reasons"] = json.dumps(row["secondary_reasons"])
             writer.writerow({key: row[key] for key in fields})
     (output / "summary.md").write_text(_summary(records, metadata), encoding="utf-8")
     (output / "manual-validation-sample.json").write_text(
-        json.dumps(sample(records, seed), indent=2, sort_keys=True) + "\n", encoding="utf-8"
+        json.dumps(sample(records, seed, methodology_version=methodology_version), indent=2, sort_keys=True) + "\n", encoding="utf-8"
     )
 
 

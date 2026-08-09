@@ -50,6 +50,11 @@ Standard buckets are `TRIVIAL`, `REFACTOR_THEN_DSL`, `NEEDS_TRANSPILER`, `BOUNDA
 
 Do not equate raw pointers, `goto`, unions, callbacks, macros, or other individual constructs with automatic impossibility.
 
+Inventory methodology versions are frozen once used for a comparison. Preserve
+the v1 scanner and its generated results; use a new explicit version for any
+material parser, feature, rule, or sampling change. Do not compare results
+produced by different methodology versions without disclosing the difference.
+
 ## Target-source safety
 
 During inventory, do not modify target source, run automatic migrations, or commit inside target repositories. During later conversion experiments, use explicit experiment branches or worktrees, preserve the pinned baseline, and make all mutations attributable to a recorded run.

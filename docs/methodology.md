@@ -67,3 +67,29 @@ A material change to these rules, parser semantics, output schema, or sampling
 procedure requires a new methodology version. Inventory classification is an
 estimate of structural migratability, not proof that a declaration will or will
 not successfully migrate through RustyCpp.
+
+## Inventory methodology version 2
+
+Version 2 is a separate, not-yet-approved scanner path in
+`inventory/inventory_v2.py`; version 1 and its existing results remain frozen.
+V2 retains the same buckets and output shape but changes lexical evidence
+collection in response to the recorded v1 review:
+
+- Comments and quoted strings are blanked while source offsets and line numbers
+  are preserved, preventing code-like text from producing features.
+- `static_local` is searched only after a function's opening brace. File-static
+  functions and globals are not local-static evidence.
+- `flexible_array` is recorded only for an empty array member in a struct/union
+  declaration, not for function parameters or ordinary arrays.
+- Conditional-compilation evidence is computed from the active preprocessor
+  nesting at the declaration's source line, rather than any directive in the
+  file. Macro use is likewise declaration-span scoped.
+- Top-level macro invocations that cannot be parsed as declarations become
+  explicit low-confidence `UNKNOWN` records.
+- Plain `extern` is retained as linkage evidence and no longer implies
+  `BOUNDARY`; only generated/third-party paths or explicit ABI syntax trigger
+  that bucket.
+
+V2 still cannot fully expand macros, resolve types, or understand every C/C++
+declarator. Unparsed or ambiguous lexical forms must remain `UNKNOWN` rather
+than be treated as confident evidence.

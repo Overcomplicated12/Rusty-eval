@@ -17,13 +17,16 @@ The current phase is inventory and migration-feasibility analysis. Later phases 
 
 ## Basic usage
 
-Inventory methodology version 1 is a deterministic, read-only lexical scanner.
+Inventory methodology version 1 is frozen with its recorded SQLite results.
+Methodology version 2 is a deterministic, read-only lexical scanner candidate
+that corrects known v1 lexical false positives; it must be approved before use
+for a new cross-application comparison.
 It measures declaration structure and visible migration evidence; it does not
 prove that a declaration will or will not successfully migrate through RustyCpp.
 Run it only against an explicitly pinned source tree:
 
 ```bash
-python3 -m inventory.inventory \
+python3 -m inventory.inventory_v2 \
   --root /path/to/application \
   --source-dir src \
   --application sqlite \
