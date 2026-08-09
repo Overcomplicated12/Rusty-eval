@@ -1,7 +1,10 @@
-"""Smoke tests for the placeholder Python packages."""
+"""Smoke tests for the inventory package."""
+
+import unittest
 
 
-def test_inventory_package_imports() -> None:
-    import inventory
+class ImportTests(unittest.TestCase):
+    def test_inventory_package_imports(self) -> None:
+        import inventory
 
-    assert inventory.__doc__
+        self.assertTrue(inventory.__doc__)

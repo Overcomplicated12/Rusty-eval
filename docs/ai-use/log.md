@@ -6,3 +6,4 @@
 | [AI-2026-002](prompts/AI-2026-002.md) | 2026-08-08 | Codex | Initialize the rusty-eval repository and evaluation infrastructure | Yes | Yes |  | TBD |
 | [AI-2026-003](prompts/AI-2026-003.md) | 2026-08-08 | Codex | Run the approved SQLite inventory evaluation and manual-validation sample | Partially | No |  | TBD |
 | [AI-2026-004](prompts/AI-2026-004.md) | 2026-08-08 | Codex | Correct AI-use model and researcher metadata | TBD | TBD |  | TBD |
+| [AI-2026-005](prompts/AI-2026-005.md) | 2026-08-08 | Codex | Implement the first approved generic RustyCpp migration inventory scanner | Yes | Yes |  | TBD |

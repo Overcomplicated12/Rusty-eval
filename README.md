@@ -17,10 +17,19 @@ The current phase is inventory and migration-feasibility analysis. Later phases 
 
 ## Basic usage
 
-The scanner and harness are intentionally placeholders while the evaluation methodology is established. Validate the local Python package with:
+Inventory methodology version 1 is a deterministic, read-only lexical scanner.
+It measures declaration structure and visible migration evidence; it does not
+prove that a declaration will or will not successfully migrate through RustyCpp.
+Run it only against an explicitly pinned source tree:
 
 ```bash
-python3 -m pytest
+python3 -m inventory.inventory \
+  --root /path/to/application \
+  --source-dir src \
+  --application sqlite \
+  --application-commit <sha> \
+  --output results/sqlite/<run-id> \
+  --sample-seed 6423
 ```
 
 See [the methodology](docs/methodology.md) before adding an application evaluation.

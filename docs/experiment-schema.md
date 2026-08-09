@@ -6,6 +6,7 @@ This initial schema describes fields expected from eventual experiments. It is i
 | --- | --- |
 | `application` | Target application identifier. |
 | `application_commit` | Exact target source commit. |
+| `inventory_methodology_version` | Version of the inventory rules/parser/sampling procedure. |
 | `rustycpp_commit` | RustyCpp/transpiler commit used. |
 | `harness_commit` | `rusty-eval` commit used to run the experiment. |
 | `compiler` | Compiler identity and version. |
