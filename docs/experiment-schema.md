@@ -28,3 +28,15 @@ This initial schema describes fields expected from eventual experiments. It is i
 | `converted_runtime` | Converted performance measurement. |
 | `result` | Overall experiment result. |
 | `failure_reason` | Recorded failure reason, when applicable. |
+| `ai_use_ids` | Relevant AI-use provenance record IDs; distinct from experimental telemetry. |
+
+For example:
+
+```json
+{
+  "ai_use_ids": ["AI-2026-014", "AI-2026-015"]
+}
+```
+
+This links an experiment to relevant human-to-AI interactions without merging
+compliance logging with token or performance measurements.
