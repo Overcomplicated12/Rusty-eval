@@ -1,0 +1,48 @@
+workspace_root = ".phase2-worktrees"
+
+[application]
+name = "mako-raft"
+repo = "../mako"
+commit = "6327c68d480a0a2a6fdf5d2bc08387aa5d4e417c"
+source_roots = ["src/deptran/raft"]
+
+[rustycpp]
+repo = "../rusty-cpp"
+commit = "488e422c293cdce3346f1ae3865ba588a74541e3"
+
+# Placeholder only for the current dry-run.
+command = ["RUSTYCPP_COMMAND_NOT_YET_CONFIGURED"]
+
+[commands]
+
+# Also placeholders. Current dry-run does not execute them.
+build = ["MAKO_BUILD_NOT_YET_CONFIGURED"]
+targeted_test = ["RAFT_TEST_NOT_YET_CONFIGURED"]
+full_test = ["RAFT_FULL_TEST_NOT_YET_CONFIGURED"]
+
+[attempt_budgets]
+max_total_attempts = 7
+transpiler_repairs = 2
+compile_repairs = 2
+test_repairs = 2
+
+[edit_policy]
+allowed_files = [
+    "src/deptran/raft/server.cc",
+    "src/deptran/raft/server.h"
+]
+
+forbidden_patterns = [
+    "tests/**",
+    "**/tests/**",
+    "benchmark/**",
+    "benchmarks/**",
+    "CMakeLists.txt",
+    "**/CMakeLists.txt",
+    "Makefile",
+    "**/Makefile",
+    "meson.build",
+    "**/meson.build",
+    "generated/**",
+    "**/generated/**"
+]

@@ -1,0 +1,23 @@
+{
+  "units": [
+    {
+      "id": "raft-is-preferred-configured-001",
+      "application": "mako-raft",
+      "application_commit": "6327c68d480a0a2a6fdf5d2bc08387aa5d4e417c",
+      "file": "src/deptran/raft/server.cc",
+      "start_line": 162,
+      "end_line": 164,
+      "allowed_files": [
+        "src/deptran/raft/server.cc",
+        "src/deptran/raft/server.h"
+      ],
+      "inventory_bucket": "TRIVIAL",
+      "inventory_reason": "known-feasible pre-migration Raft helper",
+      "metadata": {
+        "symbol": "IsPreferredLeaderConfigured",
+        "known_migration_commit": "0c1a2729",
+        "selection_method": "known_good_smoke_test"
+      }
+    }
+  ]
+}
