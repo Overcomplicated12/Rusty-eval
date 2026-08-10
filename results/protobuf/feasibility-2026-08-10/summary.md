@@ -62,6 +62,18 @@ The compiler is separate: **301 production files / 89,896 LOC**. The common pars
 
 The existing rusty-eval AI-use procedure was inspected. Its required AI log and verbatim prompt record were not created because this evaluation was explicitly read-only and the original checkout was outside the writable workspace. The exact prompt remains in the supplied attachment.
 
+## Project status
+
+This status table surfaces the summary's existing assessment. Impact and
+difficulty are qualitative estimates, and the finish level is a migration-scope
+assessment rather than a delivery schedule or a measured conversion result.
+
+| Dimension | Status | Evidence and limitation |
+|---|---|---|
+| Impact | **VERY_HIGH** | The runtime's Arena, messages, repeated fields, maps, parsing, reflection, and generated-runtime interfaces are foundational dependencies. |
+| Difficulty | **HIGH** for the runtime; broader work remains unproven | Arena/allocation, layout, generated-message interfaces, reflection, extensions, and external IO have lifetime contracts that propagate across the runtime. |
+| Expected finish level | **Staged hybrid runtime migration** | A 150–300-function meaningful evaluation is proposed. Broad mechanical conversion is not demonstrated; the compiler frontend is a separate later target and must not be combined with runtime estimates. |
+
 ## Final answer
 
 - Overall doability: **YES**, as a staged hybrid migration

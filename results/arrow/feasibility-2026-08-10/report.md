@@ -138,3 +138,15 @@ Apache Arrow C++:
 - Recommended meaningful migration size: 35–60k LOC / 400–900 functions
 - Build/test quality: strong harnesses; configure blocked by missing Boost/xsimd here
 - Overall doability: staged hybrid migration feasible; broad direct migration not demonstrated
+
+## Project status
+
+This status table surfaces the report's existing assessment. Impact and
+difficulty are qualitative estimates, and the finish level is a migration-scope
+assessment rather than a delivery schedule or a measured conversion result.
+
+| Dimension | Status | Evidence and limitation |
+|---|---|---|
+| Impact | **VERY_HIGH** | Buffers, arrays, schema, IPC, and compute are shared data and memory paths; the report identifies broad downstream reach and correspondingly demanding compatibility/performance validation. |
+| Difficulty | **VERY_HIGH** for broad work | Allocator, byte/layout, OS/ABI, SIMD/generated, concurrency, template, and cross-translation-unit concerns are concentrated in central code paths. |
+| Expected finish level | **Staged hybrid migration** | A proof of concept and meaningful evaluation are proposed; broad direct inline-DSL migration is not demonstrated, and allocator/OS/ABI, generated/SIMD, external-integration, and concurrency-heavy cores are expected to remain boundary code. |

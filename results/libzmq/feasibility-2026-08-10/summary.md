@@ -192,6 +192,18 @@ No build was run in this preflight. A minimal later build should disable optiona
 - **UNCERTAIN:** exact inline-DSL success for virtual interfaces, atomic pointer implementations, platform branches, callbacks, and external security/socket APIs.
 - Raw pointers were treated as evidence requiring review, not automatic proof of unsafety.
 
+## Project status
+
+This status table surfaces the summary's existing assessment. Impact and
+difficulty are qualitative estimates, and the finish level is a migration-scope
+assessment rather than a delivery schedule or a measured conversion result.
+
+| Dimension | Status | Evidence and limitation |
+|---|---|---|
+| Impact | **HIGH to VERY_HIGH** | The public C ABI, message ownership, socket state machines, queues, pollers, and transports sit on common send/receive paths. |
+| Difficulty | **HIGH to VERY_HIGH** | The central correctness and performance paths include message buffers, lock-free queues, pollers, transports, C callbacks, ownership protocols, and platform branches. |
+| Expected finish level | **Staged hybrid migration** | The report supports a smaller meaningful evaluation first; broad safe migration remains uncertain until atomics, callbacks, virtual interfaces, platform APIs, and cross-translation-unit ownership contracts are demonstrated. |
+
 ## Final summary
 
 - Relevant production LOC: **50,681**
