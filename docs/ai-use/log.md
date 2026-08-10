@@ -12,3 +12,4 @@
 | [AI-2026-008](prompts/AI-2026-008.md) | 2026-08-10 | Codex | Read-only Apache Arrow C++ RustyCpp inline-Rust DSL feasibility preflight | Yes | No |  | Yes |
 | [AI-2026-009](prompts/AI-2026-009.md) | 2026-08-10 | Codex | Read-only libzmq C++ RustyCpp inline-Rust DSL feasibility preflight | TBD | TBD |  | TBD |
 | [AI-2026-010](prompts/AI-2026-010.md) | 2026-08-10 | Codex | Build Phase 2 automated RustyCpp migration harness scaffolding and record all AI-assisted actions | Yes | Yes |  | Pending researcher determination |
+| [AI-2026-012](prompts/AI-2026-012.md) | 2026-08-10 | Codex | Update project code and packaging paths after moving Python packages under src | Yes | Yes |  | Pending researcher determination |

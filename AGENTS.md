@@ -8,8 +8,8 @@ Target applications such as SQLite, Mako, and Masstree live in separate reposito
 
 ## Repository responsibilities
 
-- `inventory/`: static inventory and migration-feasibility analysis.
-- `harness/`: automated conversion, build, test, and repair orchestration.
+- `src/inventory/`: static inventory and migration-feasibility analysis.
+- `src/harness/`: automated conversion, build, test, and repair orchestration.
 - `configs/`: per-application experiment definitions.
 - `results/`: machine-generated experiment results.
 - `tests/`: tests for `rusty-eval` itself.
@@ -44,7 +44,7 @@ Do not assume all targets exist. Detect and report missing repositories.
 
 ## Inventory rules
 
-The inventory scanner must be deterministic. Prefer Clang AST information for declarations and types, using textual analysis only where appropriate.
+The inventory scanner in `src/inventory/` must be deterministic. Prefer Clang AST information for declarations and types, using textual analysis only where appropriate.
 
 Standard buckets are `TRIVIAL`, `REFACTOR_THEN_DSL`, `NEEDS_TRANSPILER`, `BOUNDARY`, and `UNKNOWN`. Each classification must contain a bucket, primary reason, secondary reasons, and confidence. Prefer `UNKNOWN` to an unsupported confident classification.
 

@@ -40,7 +40,7 @@ callbacks, unions, macros, compilation conditions, and boundary-path evidence.
 It does not make LLM calls.
 
 The authoritative bucket definitions and ordered rules are in
-`inventory/rules.py`:
+`src/inventory/rules.py`:
 
 - `TRIVIAL`: no significant detected blocker; ordinary pointers, arrays, and
   macros alone remain evidence rather than a blocker.
@@ -71,7 +71,7 @@ not successfully migrate through RustyCpp.
 ## Inventory methodology version 2
 
 Version 2 is a separate, not-yet-approved scanner path in
-`inventory/inventory_v2.py`; version 1 and its existing results remain frozen.
+`src/inventory/inventory_v2.py`; version 1 and its existing results remain frozen.
 V2 retains the same buckets and output shape but changes lexical evidence
 collection in response to the recorded v1 review:
 

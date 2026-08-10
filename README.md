@@ -11,8 +11,8 @@ tests, or benchmarks. See [Phase 2 harness](docs/phase2-harness.md).
 
 ## Layout
 
-- `inventory/` — deterministic static inventory and feasibility analysis.
-- `harness/` — future conversion/build/test/repair orchestration.
+- `src/inventory/` — deterministic static inventory and feasibility analysis.
+- `src/harness/` — future conversion/build/test/repair orchestration.
 - `configs/` — per-application experiment definitions.
 - `results/` — versionable summaries and generated run data.
 - `docs/` — methodology and experiment schema.
@@ -29,6 +29,7 @@ prove that a declaration will or will not successfully migrate through RustyCpp.
 Run it only against an explicitly pinned source tree:
 
 ```bash
+python3 -m pip install -e .
 python3 -m inventory.inventory_v2 \
   --root /path/to/application \
   --source-dir src \
