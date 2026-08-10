@@ -10,3 +10,4 @@
 | [AI-2026-006](prompts/AI-2026-006.md) | 2026-08-09 | Codex | Review inventory methodology v1 and the first SQLite inventory run | Yes | No |  | TBD |
 | [AI-2026-007](prompts/AI-2026-007.md) | 2026-08-09 | Codex | Implement inventory methodology version 2 from the SQLite review findings | Yes | Yes |  | TBD |
 | [AI-2026-008](prompts/AI-2026-008.md) | 2026-08-10 | Codex | Read-only Apache Arrow C++ RustyCpp inline-Rust DSL feasibility preflight | Yes | No |  | Yes |
+| [AI-2026-009](prompts/AI-2026-009.md) | 2026-08-10 | Codex | Read-only libzmq C++ RustyCpp inline-Rust DSL feasibility preflight | TBD | TBD |  | TBD |
