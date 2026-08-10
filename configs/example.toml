@@ -1,0 +1,30 @@
+# Illustrative only. Values are placeholders and are not executed by dry-run.
+workspace_root = ".phase2-worktrees"
+
+[application]
+name = "example-app"
+repo = "../example-app"
+commit = "0123456789abcdef0123456789abcdef01234567"
+source_roots = ["src"]
+
+[rustycpp]
+repo = "../rusty-cpp"
+commit = "0123456789abcdef0123456789abcdef01234567"
+# The harness does not assume RustyCpp's CLI. Replace this configured example.
+command = ["rustycpp-command-from-project-config"]
+
+[commands]
+build = ["project-build-command"]
+targeted_test = ["project-targeted-test-command"]
+full_test = ["project-full-test-command"]
+benchmark = ["project-benchmark-command"]
+
+[attempt_budgets]
+max_total_attempts = 7
+transpiler_repairs = 2
+compile_repairs = 2
+test_repairs = 2
+
+[edit_policy]
+allowed_files = ["src/**"]
+forbidden_patterns = ["tests/**", "**/tests/**", "benchmark/**", "benchmarks/**", "CMakeLists.txt", "**/CMakeLists.txt", "Makefile", "**/Makefile", "meson.build", "**/meson.build", "generated/**", "**/generated/**", "*.generated.*"]

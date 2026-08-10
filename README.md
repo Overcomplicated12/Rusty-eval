@@ -4,7 +4,10 @@ Research tooling for evaluating RustyCpp migrations across applications. It is n
 
 This repository keeps reusable inventory analysis, conversion-harness infrastructure, experiment definitions, and generated evaluation results in one place. Target applications remain separate sibling repositories, such as `~/projects/sqlite`, `~/projects/mako`, and `~/projects/masstree`; they are never vendored here.
 
-The current phase is inventory and migration-feasibility analysis. Later phases will automate conversion and measure correctness, performance, token use, and human effort.
+Phase 1 inventory and feasibility tooling is available. Phase 2 now provides
+scaffolding for reproducible, harness-controlled migration experiments; its
+dry-run interface does not create worktrees or invoke agents, RustyCpp, builds,
+tests, or benchmarks. See [Phase 2 harness](docs/phase2-harness.md).
 
 ## Layout
 

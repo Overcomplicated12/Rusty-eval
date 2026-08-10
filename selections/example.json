@@ -1,0 +1,16 @@
+{
+  "units": [
+    {
+      "id": "example-001",
+      "application": "example-app",
+      "application_commit": "0123456789abcdef0123456789abcdef01234567",
+      "file": "src/example.cpp",
+      "start_line": 10,
+      "end_line": 20,
+      "allowed_files": ["src/example.cpp"],
+      "inventory_bucket": "TRIVIAL",
+      "inventory_reason": "example_only",
+      "metadata": {"selection_method": "explicit_example"}
+    }
+  ]
+}
