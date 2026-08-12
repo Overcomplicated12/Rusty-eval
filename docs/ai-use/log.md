@@ -15,3 +15,4 @@
 | [AI-2026-012](prompts/AI-2026-012.md) | 2026-08-10 | Codex | Update project code and packaging paths after moving Python packages under src | Yes | Yes |  | Pending researcher determination |
 | [AI-2026-013](prompts/AI-2026-013.md) | 2026-08-10 | Codex | Add a consistent, evidence-labeled status section to Arrow, libzmq, Protobuf, and SQLite evaluation summaries | Yes | No |  | Pending researcher determination |
 | [AI-2026-014](prompts/AI-2026-014.md) | 2026-08-10 | Codex | Read-only SQLite C RustyCpp inline-Rust DSL feasibility preflight | TBD | TBD |  | TBD |
+| [AI-2026-015](prompts/AI-2026-015.md) | 2026-08-12 | Codex | Read-only FlatBuffers C++ RustyCpp inline-Rust DSL feasibility preflight | Yes | No |  | Pending researcher determination |
