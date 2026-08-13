@@ -125,6 +125,7 @@ class FileSummary(JsonRecord):
     functions_safe: int
     functions_unsafe_declared: int
     functions_with_unsafe: int
+    functions_unsafe_any: int
     functions_with_any_explicit_unsafe: int
     functions_without_explicit_unsafe: int
     unsafe_traits: int
@@ -143,6 +144,7 @@ class SourceMetrics(JsonRecord):
     functions_safe: int
     functions_unsafe_declared: int
     functions_with_unsafe: int
+    functions_unsafe_any: int
     functions_with_any_explicit_unsafe: int
     functions_without_explicit_unsafe: int
     safe_function_pct: float | None
@@ -181,8 +183,13 @@ class CheckoutMetadata(JsonRecord):
     source_url: str
     pinned_reference: str
     checkout_root: str
+    repository_root: str
+    workspace_root: str
     package_root: str
     manifest_path: str
+    package_name: str
+    library_target_source: str
+    production_source_roots: list[str]
 
 
 @dataclass(frozen=True)

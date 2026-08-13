@@ -26,6 +26,7 @@ SUMMARY_COLUMNS = [
     "functions_safe",
     "functions_unsafe_declared",
     "functions_with_unsafe",
+    "functions_unsafe_any",
     "safe_function_pct",
     "functions_without_explicit_unsafe_pct",
     "unsafe_blocks",

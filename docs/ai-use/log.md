@@ -18,3 +18,4 @@
 | [AI-2026-015](prompts/AI-2026-015.md) | 2026-08-12 | Codex | Read-only FlatBuffers C++ RustyCpp inline-Rust DSL feasibility preflight | Yes | No |  | Pending researcher determination |
 | [AI-2026-016](prompts/AI-2026-016.md) | 2026-08-12 | Codex | Read-only LevelDB C++ RustyCpp inline-Rust DSL feasibility preflight | Yes | No |  | Pending researcher determination |
 | [AI-2026-017](prompts/AI-2026-017.md) | 2026-08-12 | codex | Implement reproducible Rust systems-library baseline scanner with tests/docs | Yes | Yes |  | Pending researcher determination |
+| [AI-2026-018](prompts/AI-2026-018.md) | 2026-08-12 | Codex | Fix Rust baseline package scope and function declaration analysis using the redb manual audit regression | Yes | Yes |  | Pending researcher determination |

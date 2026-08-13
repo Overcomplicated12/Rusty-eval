@@ -4,13 +4,16 @@ import json
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
+from rust_baseline.cargo import resolve_package_library_target
 from rust_baseline.config import ConfigError, load_config
 from rust_baseline.report import create_experiment_id
 from rust_baseline.source_scan import iter_production_rust_files, scan_rust_file, scan_source_tree, strip_non_code
 
 
 FIXTURE_ROOT = Path(__file__).parent / "fixtures" / "rust_baseline" / "sample_crate"
+REDB_AUDIT_ROOT = Path(__file__).parents[1] / ".rust-baseline-work" / "sources" / "redb-dea77f0f0653"
 
 
 class RustBaselineScannerTests(unittest.TestCase):
@@ -39,7 +42,8 @@ class RustBaselineScannerTests(unittest.TestCase):
         self.assertEqual(metrics["unsafe_block_count"], 5)
         self.assertEqual(metrics["files_with_unsafe"], 1)
         self.assertEqual(metrics["unsafe_loc_estimate"], 18)
-        self.assertAlmostEqual(metrics["safe_function_pct"], 90.0)
+        self.assertEqual(metrics["functions_unsafe_any"], 4)
+        self.assertAlmostEqual(metrics["safe_function_pct"], 60.0)
         self.assertAlmostEqual(metrics["functions_without_explicit_unsafe_pct"], 60.0)
         self.assertEqual(result["top_unsafe_files"][0]["path"], "src/lib.rs")
         self.assertEqual(result["unsafe_counts_per_file"]["src/lib.rs"]["unsafe_block_count"], 5)
@@ -58,6 +62,91 @@ class RustBaselineScannerTests(unittest.TestCase):
         self.assertEqual(summary["functions_with_unsafe"], 1)
         self.assertEqual(summary["functions_with_any_explicit_unsafe"], 1)
         self.assertEqual(summary["functions_without_explicit_unsafe"], 1)
+
+    def test_function_pointer_types_are_not_declarations(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            path = root / "function_pointers.rs"
+            path.write_text(
+                "type Callback = unsafe fn(u8);\n"
+                "fn takes_callback(callback: unsafe fn(u8)) {}\n"
+                "pub unsafe extern \"C\" fn actual() { unsafe { callback(); } }\n",
+                encoding="utf-8",
+            )
+            summary = scan_rust_file(root, path).to_dict()
+        self.assertEqual(summary["functions_total"], 2)
+        self.assertEqual(summary["functions_unsafe_declared"], 1)
+        self.assertEqual(summary["functions_with_unsafe"], 1)
+        self.assertEqual(summary["functions_unsafe_any"], 1)
+
+    def test_direct_test_only_items_are_excluded(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            path = root / "test_only.rs"
+            path.write_text(
+                "fn production() {}\n"
+                "#[cfg(test)]\nmod tests { #[test] fn test_unsafe() { unsafe { helper(); } } }\n"
+                "#[test]\nfn standalone_test() { unsafe { helper(); } }\n"
+                "#[cfg(any(test, feature = \"production" + "_feature\"))]\nfn mixed_cfg() {}\n",
+                encoding="utf-8",
+            )
+            summary = scan_rust_file(root, path).to_dict()
+        self.assertEqual(summary["functions_total"], 2)
+        self.assertEqual(summary["functions_with_unsafe"], 0)
+        self.assertEqual(summary["unsafe_blocks"], 0)
+
+    @unittest.skipUnless(REDB_AUDIT_ROOT.exists(), "pinned redb audit checkout is not present")
+    def test_pinned_redb_manual_audit_regression(self) -> None:
+        metrics = scan_source_tree(REDB_AUDIT_ROOT, [REDB_AUDIT_ROOT / "src"])["metrics"]
+        self.assertEqual(
+            {key: metrics[key] for key in (
+                "production_files",
+                "functions_total",
+                "functions_unsafe_declared",
+                "functions_with_unsafe",
+                "functions_unsafe_any",
+                "functions_without_explicit_unsafe",
+                "unsafe_block_count",
+                "unsafe_loc_estimate",
+                "files_with_unsafe",
+            )},
+            {
+                "production_files": 44,
+                "functions_total": 1547,
+                "functions_unsafe_declared": 9,
+                "functions_with_unsafe": 21,
+                "functions_unsafe_any": 25,
+                "functions_without_explicit_unsafe": 1522,
+                "unsafe_block_count": 24,
+                "unsafe_loc_estimate": 177,
+                "files_with_unsafe": 5,
+            },
+        )
+
+
+class CargoMetadataResolutionTests(unittest.TestCase):
+    def test_resolves_only_the_named_library_target(self) -> None:
+        metadata = {
+            "workspace_root": "/checkout",
+            "packages": [
+                {
+                    "name": "redb",
+                    "manifest_path": "/checkout/redb/Cargo.toml",
+                    "targets": [{"kind": ["lib"], "src_path": "/checkout/redb/src/lib.rs"}],
+                },
+                {
+                    "name": "sibling",
+                    "manifest_path": "/checkout/sibling/Cargo.toml",
+                    "targets": [{"kind": ["lib"], "src_path": "/checkout/sibling/src/lib.rs"}],
+                },
+            ],
+        }
+        with patch("rust_baseline.cargo.run_command") as run_command:
+            run_command.return_value.returncode = 0
+            run_command.return_value.stdout = json.dumps(metadata)
+            resolution = resolve_package_library_target(Path("/checkout"), "redb", load_config(Path("configs/rust-baseline.toml")).tools)
+        self.assertEqual(resolution.package_root, Path("/checkout/redb"))
+        self.assertEqual(resolution.library_target_source, Path("/checkout/redb/src/lib.rs"))
 
 
 class RustBaselineConfigTests(unittest.TestCase):

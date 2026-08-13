@@ -7,6 +7,7 @@ import shutil
 import subprocess
 import tarfile
 import urllib.request
+from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
@@ -16,6 +17,22 @@ from .source_scan import _EXCLUDED_DIRS
 
 class CargoError(RuntimeError):
     """Raised when source acquisition or package resolution fails."""
+
+
+@dataclass(frozen=True)
+class PackageResolution:
+    """The selected package and production library target from Cargo metadata."""
+
+    repository_root: Path
+    workspace_root: Path
+    package_root: Path
+    manifest_path: Path
+    package_name: str
+    library_target_source: Path
+
+    @property
+    def production_source_roots(self) -> list[Path]:
+        return [self.library_target_source.parent]
 
 
 def run_command(command: list[str], cwd: Path | None = None) -> subprocess.CompletedProcess[str]:
@@ -58,6 +75,39 @@ def find_package_manifest(checkout_root: Path, package: str) -> Path:
     if len(matches) > 1:
         raise CargoError(f"multiple Cargo manifests matched package '{package}' under {checkout_root}")
     return matches[0]
+
+
+def resolve_package_library_target(checkout_root: Path, package: str, tools: ToolCommands) -> PackageResolution:
+    """Resolve one package's library target without traversing sibling workspace packages."""
+    result = run_command([tools.cargo, "metadata", "--format-version", "1", "--no-deps"], cwd=checkout_root)
+    if result.returncode != 0:
+        raise CargoError(f"cargo metadata failed for {package}: {result.stderr.strip()}")
+    try:
+        metadata = json.loads(result.stdout)
+    except json.JSONDecodeError as error:
+        raise CargoError(f"cargo metadata produced invalid JSON for {package}") from error
+    packages = [item for item in metadata.get("packages", []) if item.get("name") == package]
+    if not packages:
+        raise CargoError(f"cargo metadata could not find package '{package}'")
+    if len(packages) > 1:
+        raise CargoError(f"cargo metadata found multiple packages named '{package}'")
+    selected = packages[0]
+    library_targets = [target for target in selected.get("targets", []) if "lib" in target.get("kind", [])]
+    if len(library_targets) != 1:
+        raise CargoError(f"package '{package}' must expose exactly one library target")
+    manifest_path = Path(selected["manifest_path"])
+    library_target_source = Path(library_targets[0]["src_path"])
+    package_root = manifest_path.parent
+    if package_root not in library_target_source.parents:
+        raise CargoError(f"library target for '{package}' is outside its package root")
+    return PackageResolution(
+        repository_root=checkout_root,
+        workspace_root=Path(metadata["workspace_root"]),
+        package_root=package_root,
+        manifest_path=manifest_path,
+        package_name=selected["name"],
+        library_target_source=library_target_source,
+    )
 
 
 def probe_cargo_geiger(

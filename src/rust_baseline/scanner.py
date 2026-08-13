@@ -7,14 +7,14 @@ from pathlib import Path
 from typing import Any
 
 from . import RUST_BASELINE_SCANNER_VERSION, RUST_BASELINE_SCHEMA_VERSION
-from .cargo import checkout_crate, find_package_manifest, probe_cargo_geiger, probe_count_unsafe, tool_versions
+from .cargo import checkout_crate, probe_cargo_geiger, probe_count_unsafe, resolve_package_library_target, tool_versions
 from .config import find_crate, load_config
 from .models import BaselineResult, CheckoutMetadata, ScanMode, ScanStatus, SourceScanStatus, ToolStatus
 from .report import BaselineReporter, create_experiment_id, write_summary_files
 from .source_scan import scan_source_tree
 
 
-AI_USE_IDS = ["AI-2026-017"]
+AI_USE_IDS = ["AI-2026-017", "AI-2026-018"]
 
 
 def validate_config(config_path: str | Path) -> dict[str, Any]:
@@ -88,18 +88,24 @@ def _scan_one(reporter: BaselineReporter, config: Any, crate: Any, mode: ScanMod
     scan_status = ScanStatus.OK
     try:
         checkout_root = checkout_crate(crate, config.workspace_root, config.tools)
-        manifest_path = find_package_manifest(checkout_root, crate.package)
-        package_root = manifest_path.parent
+        resolution = resolve_package_library_target(checkout_root, crate.package, config.tools)
+        manifest_path = resolution.manifest_path
+        package_root = resolution.package_root
         checkout_metadata = CheckoutMetadata(
             source_kind=crate.source_kind,
             source_url=crate.source_url,
             pinned_reference=crate.pinned_reference,
             checkout_root=str(checkout_root),
+            repository_root=str(resolution.repository_root),
+            workspace_root=str(resolution.workspace_root),
             package_root=str(package_root),
             manifest_path=str(manifest_path),
+            package_name=resolution.package_name,
+            library_target_source=str(resolution.library_target_source),
+            production_source_roots=[str(path) for path in resolution.production_source_roots],
         )
         reporter.write_crate_metadata(crate, checkout_metadata.to_dict())
-        source_scan = scan_source_tree(package_root)
+        source_scan = scan_source_tree(package_root, resolution.production_source_roots)
         reporter.write_mode_artifact(crate.name, mode, "source_scan.json", source_scan)
         geiger_record = probe_cargo_geiger(manifest_path, mode, crate, config.tools, stdout_dir)
         reporter.write_mode_artifact(crate.name, mode, "cargo_geiger.json", geiger_record.to_dict())
@@ -168,6 +174,7 @@ def _summary_row(
         "functions_safe": metrics.get("functions_safe", ""),
         "functions_unsafe_declared": metrics.get("functions_unsafe_declared", ""),
         "functions_with_unsafe": metrics.get("functions_with_unsafe", ""),
+        "functions_unsafe_any": metrics.get("functions_unsafe_any", ""),
         "safe_function_pct": metrics.get("safe_function_pct", ""),
         "functions_without_explicit_unsafe_pct": metrics.get("functions_without_explicit_unsafe_pct", ""),
         "unsafe_blocks": metrics.get("unsafe_block_count", ""),
