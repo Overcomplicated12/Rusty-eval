@@ -8,6 +8,9 @@ Phase 1 inventory and feasibility tooling is available. Phase 2 now provides
 scaffolding for reproducible, harness-controlled migration experiments; its
 dry-run interface does not create worktrees or invoke agents, RustyCpp, builds,
 tests, or benchmarks. See [Phase 2 harness](docs/phase2-harness.md).
+The repository also includes a reproducible Rust systems-library baseline
+scanner for explicit `unsafe` structure measurements; see
+[Rust baseline scanner](docs/rust-baseline.md).
 
 ## Layout
 
@@ -40,3 +43,10 @@ python3 -m inventory.inventory_v2 \
 ```
 
 See [the methodology](docs/methodology.md) before adding an application evaluation.
+
+Rust baseline example:
+
+```bash
+python3 -m rust_baseline.cli validate-config \
+  --config configs/rust-baseline.toml
+```

@@ -8,3 +8,8 @@ class ImportTests(unittest.TestCase):
         import inventory
 
         self.assertTrue(inventory.__doc__)
+
+    def test_rust_baseline_package_imports(self) -> None:
+        import rust_baseline
+
+        self.assertTrue(rust_baseline.__doc__)

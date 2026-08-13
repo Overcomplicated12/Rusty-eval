@@ -17,3 +17,4 @@
 | [AI-2026-014](prompts/AI-2026-014.md) | 2026-08-10 | Codex | Read-only SQLite C RustyCpp inline-Rust DSL feasibility preflight | TBD | TBD |  | TBD |
 | [AI-2026-015](prompts/AI-2026-015.md) | 2026-08-12 | Codex | Read-only FlatBuffers C++ RustyCpp inline-Rust DSL feasibility preflight | Yes | No |  | Pending researcher determination |
 | [AI-2026-016](prompts/AI-2026-016.md) | 2026-08-12 | Codex | Read-only LevelDB C++ RustyCpp inline-Rust DSL feasibility preflight | Yes | No |  | Pending researcher determination |
+| [AI-2026-017](prompts/AI-2026-017.md) | 2026-08-12 | codex | Implement reproducible Rust systems-library baseline scanner with tests/docs | Yes | Yes |  | Pending researcher determination |

@@ -1,0 +1,59 @@
+workspace_root = "../.rust-baseline-work"
+results_root = "../results/rust-baseline"
+
+# Replace each placeholder with a real pinned commit before a real run.
+# Validation intentionally fails while rev remains a placeholder.
+
+[[crate]]
+name = "redb"
+repo = "https://github.com/cberner/redb.git"
+rev = "<PINNED COMMIT>"
+package = "redb"
+
+[[crate]]
+name = "rkyv"
+repo = "https://github.com/rkyv/rkyv.git"
+rev = "<PINNED COMMIT>"
+package = "rkyv"
+
+[[crate]]
+name = "crossbeam-epoch"
+repo = "https://github.com/crossbeam-rs/crossbeam.git"
+rev = "<PINNED COMMIT>"
+package = "crossbeam-epoch"
+
+[[crate]]
+name = "tokio"
+repo = "https://github.com/tokio-rs/tokio.git"
+rev = "<PINNED COMMIT>"
+package = "tokio"
+
+[[crate]]
+name = "mio"
+repo = "https://github.com/tokio-rs/mio.git"
+rev = "<PINNED COMMIT>"
+package = "mio"
+
+[[crate]]
+name = "quinn-proto"
+repo = "https://github.com/quinn-rs/quinn.git"
+rev = "<PINNED COMMIT>"
+package = "quinn-proto"
+
+[[crate]]
+name = "rustix"
+repo = "https://github.com/bytecodealliance/rustix.git"
+rev = "<PINNED COMMIT>"
+package = "rustix"
+
+[[crate]]
+name = "rustls"
+repo = "https://github.com/rustls/rustls.git"
+rev = "<PINNED COMMIT>"
+package = "rustls"
+
+[[crate]]
+name = "blake3"
+repo = "https://github.com/BLAKE3-team/BLAKE3.git"
+rev = "<PINNED COMMIT>"
+package = "blake3"
