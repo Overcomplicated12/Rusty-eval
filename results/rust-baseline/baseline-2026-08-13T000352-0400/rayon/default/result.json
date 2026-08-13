@@ -1,0 +1,62 @@
+{
+  "all_features_enabled": false,
+  "crate_name": "rayon",
+  "default_features_enabled": true,
+  "enabled_features": [],
+  "experiment_id": "baseline-2026-08-13T000352-0400",
+  "failures": [],
+  "mode": "default",
+  "package": "rayon",
+  "revision": "1f9bb2538e50f1e6d1bc2e3d06a361ba2af0b632",
+  "rust_toolchain": {
+    "cargo": "cargo 1.91.0 (ea2d97820 2025-10-10)",
+    "git": "git version 2.53.0",
+    "rustc": "rustc 1.91.0 (f8297e351 2025-10-28)"
+  },
+  "scan_date": "2026-08-13T00:03:52-04:00",
+  "scan_status": "OK",
+  "scanner_version": "rust-baseline-source-v1",
+  "schema_version": "rust-baseline-v1",
+  "source_checkout": {
+    "checkout_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/rayon-1f9bb2538e50",
+    "library_target_source": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/rayon-1f9bb2538e50/src/lib.rs",
+    "manifest_path": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/rayon-1f9bb2538e50/Cargo.toml",
+    "package_name": "rayon",
+    "package_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/rayon-1f9bb2538e50",
+    "pinned_reference": "1f9bb2538e50f1e6d1bc2e3d06a361ba2af0b632",
+    "production_source_roots": [
+      "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/rayon-1f9bb2538e50/src"
+    ],
+    "repository_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/rayon-1f9bb2538e50",
+    "source_kind": "git",
+    "source_url": "https://github.com/rayon-rs/rayon.git",
+    "workspace_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/rayon-1f9bb2538e50"
+  },
+  "source_scan_status": "OK",
+  "summary": {
+    "count_unsafe_status": "TOOL_UNAVAILABLE",
+    "crate": "rayon",
+    "files_with_unsafe": 10,
+    "functions_safe": 1462,
+    "functions_total": 1497,
+    "functions_unsafe_any": 35,
+    "functions_unsafe_declared": 9,
+    "functions_with_unsafe": 33,
+    "functions_without_explicit_unsafe_pct": 97.662,
+    "geiger_status": "TOOL_UNAVAILABLE",
+    "mode": "default",
+    "nonblank_loc": 21042,
+    "physical_loc": 24152,
+    "production_files": 99,
+    "revision": "1f9bb2538e50f1e6d1bc2e3d06a361ba2af0b632",
+    "safe_function_pct": 97.662,
+    "scan_status": "OK",
+    "top5_unsafe_block_concentration_pct": 96.2264,
+    "top5_unsafe_concentration_pct": 98.0932,
+    "unsafe_blocks": 53,
+    "unsafe_file_pct": 10.101,
+    "unsafe_loc_estimate": 472,
+    "unsafe_loc_pct_estimate": 1.9543
+  },
+  "unsafe_category_annotations": []
+}

@@ -1,0 +1,62 @@
+{
+  "all_features_enabled": false,
+  "crate_name": "quinn-proto",
+  "default_features_enabled": true,
+  "enabled_features": [],
+  "experiment_id": "baseline-2026-08-13T000352-0400",
+  "failures": [],
+  "mode": "default",
+  "package": "quinn-proto",
+  "revision": "148d760d8845dc6315d554a39a1f1f83a4134bfe",
+  "rust_toolchain": {
+    "cargo": "cargo 1.91.0 (ea2d97820 2025-10-10)",
+    "git": "git version 2.53.0",
+    "rustc": "rustc 1.91.0 (f8297e351 2025-10-28)"
+  },
+  "scan_date": "2026-08-13T00:03:52-04:00",
+  "scan_status": "OK",
+  "scanner_version": "rust-baseline-source-v1",
+  "schema_version": "rust-baseline-v1",
+  "source_checkout": {
+    "checkout_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/quinn-proto-148d760d8845",
+    "library_target_source": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/quinn-proto-148d760d8845/quinn-proto/src/lib.rs",
+    "manifest_path": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/quinn-proto-148d760d8845/quinn-proto/Cargo.toml",
+    "package_name": "quinn-proto",
+    "package_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/quinn-proto-148d760d8845/quinn-proto",
+    "pinned_reference": "148d760d8845dc6315d554a39a1f1f83a4134bfe",
+    "production_source_roots": [
+      "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/quinn-proto-148d760d8845/quinn-proto/src"
+    ],
+    "repository_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/quinn-proto-148d760d8845",
+    "source_kind": "git",
+    "source_url": "https://github.com/quinn-rs/quinn.git",
+    "workspace_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/quinn-proto-148d760d8845"
+  },
+  "source_scan_status": "OK",
+  "summary": {
+    "count_unsafe_status": "TOOL_UNAVAILABLE",
+    "crate": "quinn-proto",
+    "files_with_unsafe": 4,
+    "functions_safe": 945,
+    "functions_total": 949,
+    "functions_unsafe_any": 4,
+    "functions_unsafe_declared": 1,
+    "functions_with_unsafe": 3,
+    "functions_without_explicit_unsafe_pct": 99.5785,
+    "geiger_status": "TOOL_UNAVAILABLE",
+    "mode": "default",
+    "nonblank_loc": 18731,
+    "physical_loc": 21371,
+    "production_files": 50,
+    "revision": "148d760d8845dc6315d554a39a1f1f83a4134bfe",
+    "safe_function_pct": 99.5785,
+    "scan_status": "OK",
+    "top5_unsafe_block_concentration_pct": 100.0,
+    "top5_unsafe_concentration_pct": 100.0,
+    "unsafe_blocks": 4,
+    "unsafe_file_pct": 8.0,
+    "unsafe_loc_estimate": 4,
+    "unsafe_loc_pct_estimate": 0.0187
+  },
+  "unsafe_category_annotations": []
+}

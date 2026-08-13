@@ -1,0 +1,25 @@
+{
+  "checkout": {
+    "checkout_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/crossbeam-epoch-7de845aa13ce",
+    "library_target_source": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/crossbeam-epoch-7de845aa13ce/crossbeam-epoch/src/lib.rs",
+    "manifest_path": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/crossbeam-epoch-7de845aa13ce/crossbeam-epoch/Cargo.toml",
+    "package_name": "crossbeam-epoch",
+    "package_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/crossbeam-epoch-7de845aa13ce/crossbeam-epoch",
+    "pinned_reference": "7de845aa13ce5d80084ce0889e014ae0aa0d19ce",
+    "production_source_roots": [
+      "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/crossbeam-epoch-7de845aa13ce/crossbeam-epoch/src"
+    ],
+    "repository_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/crossbeam-epoch-7de845aa13ce",
+    "source_kind": "git",
+    "source_url": "https://github.com/crossbeam-rs/crossbeam.git",
+    "workspace_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/crossbeam-epoch-7de845aa13ce"
+  },
+  "crate": {
+    "features": [],
+    "name": "crossbeam-epoch",
+    "package": "crossbeam-epoch",
+    "repo": "https://github.com/crossbeam-rs/crossbeam.git",
+    "rev": "7de845aa13ce5d80084ce0889e014ae0aa0d19ce",
+    "version": null
+  }
+}

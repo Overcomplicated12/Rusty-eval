@@ -7,12 +7,24 @@ from pathlib import Path
 from typing import Any
 
 from . import RUST_BASELINE_SCANNER_VERSION, RUST_BASELINE_SCHEMA_VERSION
-from .cargo import checkout_crate, probe_cargo_geiger, probe_count_unsafe, resolve_package_library_target, tool_versions
+from .cargo import (
+    checkout_crate,
+    probe_cargo_geiger,
+    probe_count_unsafe,
+    resolve_package_library_target,
+    tool_versions,
+)
 from .config import find_crate, load_config
-from .models import BaselineResult, CheckoutMetadata, ScanMode, ScanStatus, SourceScanStatus, ToolStatus
+from .models import (
+    BaselineResult,
+    CheckoutMetadata,
+    ScanMode,
+    ScanStatus,
+    SourceScanStatus,
+    ToolStatus,
+)
 from .report import BaselineReporter, create_experiment_id, write_summary_files
 from .source_scan import scan_source_tree
-
 
 AI_USE_IDS = ["AI-2026-017", "AI-2026-018"]
 

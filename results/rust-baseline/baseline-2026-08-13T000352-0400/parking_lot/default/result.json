@@ -1,0 +1,62 @@
+{
+  "all_features_enabled": false,
+  "crate_name": "parking_lot",
+  "default_features_enabled": true,
+  "enabled_features": [],
+  "experiment_id": "baseline-2026-08-13T000352-0400",
+  "failures": [],
+  "mode": "default",
+  "package": "parking_lot",
+  "revision": "d20d71e5a8955ec1d2a53e3659142a505476bb3d",
+  "rust_toolchain": {
+    "cargo": "cargo 1.91.0 (ea2d97820 2025-10-10)",
+    "git": "git version 2.53.0",
+    "rustc": "rustc 1.91.0 (f8297e351 2025-10-28)"
+  },
+  "scan_date": "2026-08-13T00:03:52-04:00",
+  "scan_status": "OK",
+  "scanner_version": "rust-baseline-source-v1",
+  "schema_version": "rust-baseline-v1",
+  "source_checkout": {
+    "checkout_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/parking_lot-d20d71e5a895",
+    "library_target_source": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/parking_lot-d20d71e5a895/src/lib.rs",
+    "manifest_path": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/parking_lot-d20d71e5a895/Cargo.toml",
+    "package_name": "parking_lot",
+    "package_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/parking_lot-d20d71e5a895",
+    "pinned_reference": "d20d71e5a8955ec1d2a53e3659142a505476bb3d",
+    "production_source_roots": [
+      "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/parking_lot-d20d71e5a895/src"
+    ],
+    "repository_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/parking_lot-d20d71e5a895",
+    "source_kind": "git",
+    "source_url": "https://github.com/Amanieu/parking_lot.git",
+    "workspace_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/parking_lot-d20d71e5a895"
+  },
+  "source_scan_status": "OK",
+  "summary": {
+    "count_unsafe_status": "TOOL_UNAVAILABLE",
+    "crate": "parking_lot",
+    "files_with_unsafe": 8,
+    "functions_safe": 64,
+    "functions_total": 120,
+    "functions_unsafe_any": 56,
+    "functions_unsafe_declared": 27,
+    "functions_with_unsafe": 29,
+    "functions_without_explicit_unsafe_pct": 53.3333,
+    "geiger_status": "TOOL_UNAVAILABLE",
+    "mode": "default",
+    "nonblank_loc": 2887,
+    "physical_loc": 3432,
+    "production_files": 13,
+    "revision": "d20d71e5a8955ec1d2a53e3659142a505476bb3d",
+    "safe_function_pct": 53.3333,
+    "scan_status": "OK",
+    "top5_unsafe_block_concentration_pct": 94.7368,
+    "top5_unsafe_concentration_pct": 66.1972,
+    "unsafe_blocks": 38,
+    "unsafe_file_pct": 61.5385,
+    "unsafe_loc_estimate": 142,
+    "unsafe_loc_pct_estimate": 4.1375
+  },
+  "unsafe_category_annotations": []
+}

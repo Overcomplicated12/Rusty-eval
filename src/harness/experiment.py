@@ -7,7 +7,6 @@ from dataclasses import dataclass, field
 from .config import HarnessConfig
 from .models import ExperimentState, MigrationUnit
 
-
 DRY_RUN_STATES = [
     ExperimentState.CREATED, ExperimentState.PREPARING, ExperimentState.BASELINING,
     ExperimentState.CONTEXT_BUILDING, ExperimentState.CONVERTING, ExperimentState.TRANSPILING,

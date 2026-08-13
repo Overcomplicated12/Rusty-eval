@@ -1,0 +1,12 @@
+{
+  "ai_use_ids": [
+    "AI-2026-017",
+    "AI-2026-018"
+  ],
+  "config_path": "/home/frankw/projects/rusty-eval/configs/rust-baseline.toml",
+  "experiment_id": "baseline-2026-08-13T000352-0400",
+  "generated_at": "2026-08-13T00:03:52-04:00",
+  "mode": "default",
+  "scanner_version": "rust-baseline-source-v1",
+  "schema_version": "rust-baseline-v1"
+}

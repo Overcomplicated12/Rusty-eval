@@ -15,9 +15,8 @@ import re
 from collections import Counter, defaultdict
 from pathlib import Path
 
-from .models import Bucket, Declaration, INVENTORY_METHODOLOGY_VERSION
+from .models import INVENTORY_METHODOLOGY_VERSION, Bucket, Declaration
 from .rules import classify
-
 
 SOURCE_SUFFIXES = {".c", ".cc", ".cpp", ".cxx", ".h", ".hh", ".hpp", ".hxx", ".in"}
 DEFAULT_SAMPLE_COUNTS = {

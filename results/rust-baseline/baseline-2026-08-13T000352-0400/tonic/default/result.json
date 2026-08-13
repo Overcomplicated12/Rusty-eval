@@ -1,0 +1,62 @@
+{
+  "all_features_enabled": false,
+  "crate_name": "tonic",
+  "default_features_enabled": true,
+  "enabled_features": [],
+  "experiment_id": "baseline-2026-08-13T000352-0400",
+  "failures": [],
+  "mode": "default",
+  "package": "tonic",
+  "revision": "0a67722863f90392c3b50fddf147c1dc9e33576e",
+  "rust_toolchain": {
+    "cargo": "cargo 1.91.0 (ea2d97820 2025-10-10)",
+    "git": "git version 2.53.0",
+    "rustc": "rustc 1.91.0 (f8297e351 2025-10-28)"
+  },
+  "scan_date": "2026-08-13T00:03:52-04:00",
+  "scan_status": "OK",
+  "scanner_version": "rust-baseline-source-v1",
+  "schema_version": "rust-baseline-v1",
+  "source_checkout": {
+    "checkout_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/tonic-0a67722863f9",
+    "library_target_source": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/tonic-0a67722863f9/tonic/src/lib.rs",
+    "manifest_path": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/tonic-0a67722863f9/tonic/Cargo.toml",
+    "package_name": "tonic",
+    "package_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/tonic-0a67722863f9/tonic",
+    "pinned_reference": "0a67722863f90392c3b50fddf147c1dc9e33576e",
+    "production_source_roots": [
+      "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/tonic-0a67722863f9/tonic/src"
+    ],
+    "repository_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/tonic-0a67722863f9",
+    "source_kind": "git",
+    "source_url": "https://github.com/hyperium/tonic.git",
+    "workspace_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/tonic-0a67722863f9"
+  },
+  "source_scan_status": "OK",
+  "summary": {
+    "count_unsafe_status": "TOOL_UNAVAILABLE",
+    "crate": "tonic",
+    "files_with_unsafe": 5,
+    "functions_safe": 743,
+    "functions_total": 750,
+    "functions_unsafe_any": 7,
+    "functions_unsafe_declared": 2,
+    "functions_with_unsafe": 7,
+    "functions_without_explicit_unsafe_pct": 99.0667,
+    "geiger_status": "TOOL_UNAVAILABLE",
+    "mode": "default",
+    "nonblank_loc": 13894,
+    "physical_loc": 15645,
+    "production_files": 60,
+    "revision": "0a67722863f90392c3b50fddf147c1dc9e33576e",
+    "safe_function_pct": 99.0667,
+    "scan_status": "OK",
+    "top5_unsafe_block_concentration_pct": 100.0,
+    "top5_unsafe_concentration_pct": 100.0,
+    "unsafe_blocks": 7,
+    "unsafe_file_pct": 8.3333,
+    "unsafe_loc_estimate": 18,
+    "unsafe_loc_pct_estimate": 0.1151
+  },
+  "unsafe_category_annotations": []
+}

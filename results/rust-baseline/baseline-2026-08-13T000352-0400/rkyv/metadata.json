@@ -1,0 +1,25 @@
+{
+  "checkout": {
+    "checkout_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/rkyv-3814956a8e11",
+    "library_target_source": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/rkyv-3814956a8e11/rkyv/src/lib.rs",
+    "manifest_path": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/rkyv-3814956a8e11/rkyv/Cargo.toml",
+    "package_name": "rkyv",
+    "package_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/rkyv-3814956a8e11/rkyv",
+    "pinned_reference": "3814956a8e11bac7b8587e4b2cb5dde99492deee",
+    "production_source_roots": [
+      "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/rkyv-3814956a8e11/rkyv/src"
+    ],
+    "repository_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/rkyv-3814956a8e11",
+    "source_kind": "git",
+    "source_url": "https://github.com/rkyv/rkyv.git",
+    "workspace_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/rkyv-3814956a8e11"
+  },
+  "crate": {
+    "features": [],
+    "name": "rkyv",
+    "package": "rkyv",
+    "repo": "https://github.com/rkyv/rkyv.git",
+    "rev": "3814956a8e11bac7b8587e4b2cb5dde99492deee",
+    "version": null
+  }
+}

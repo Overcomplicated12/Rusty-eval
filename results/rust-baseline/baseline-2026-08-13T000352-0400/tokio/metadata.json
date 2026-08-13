@@ -1,0 +1,25 @@
+{
+  "checkout": {
+    "checkout_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/tokio-625954f36572",
+    "library_target_source": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/tokio-625954f36572/tokio/src/lib.rs",
+    "manifest_path": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/tokio-625954f36572/tokio/Cargo.toml",
+    "package_name": "tokio",
+    "package_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/tokio-625954f36572/tokio",
+    "pinned_reference": "625954f365727668cb02d04172b34f1149637728",
+    "production_source_roots": [
+      "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/tokio-625954f36572/tokio/src"
+    ],
+    "repository_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/tokio-625954f36572",
+    "source_kind": "git",
+    "source_url": "https://github.com/tokio-rs/tokio.git",
+    "workspace_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/tokio-625954f36572"
+  },
+  "crate": {
+    "features": [],
+    "name": "tokio",
+    "package": "tokio",
+    "repo": "https://github.com/tokio-rs/tokio.git",
+    "rev": "625954f365727668cb02d04172b34f1149637728",
+    "version": null
+  }
+}

@@ -7,7 +7,6 @@ from dataclasses import dataclass, field
 from .config import AttemptBudgets
 from .models import AttemptPurpose
 
-
 AUTOMATION_EXHAUSTED = "AUTOMATION_EXHAUSTED"
 
 

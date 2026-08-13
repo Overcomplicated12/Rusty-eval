@@ -5,16 +5,23 @@ import tempfile
 import unittest
 from pathlib import Path
 
+from test_config import VALID
+
 from harness.config import load_config
 from harness.experiment import ExperimentController
 from harness.models import (
-    AgentAttempt, AgentRequest, AgentResponse, AttemptPurpose, ExperimentResult,
-    ExperimentState, MigrationUnit, TokenSource, TokenUsage,
+    AgentAttempt,
+    AgentRequest,
+    AgentResponse,
+    AttemptPurpose,
+    ExperimentResult,
+    ExperimentState,
+    MigrationUnit,
+    TokenSource,
+    TokenUsage,
 )
 from harness.reporting import ExperimentReporter, ReportingError
 from harness.telemetry import aggregate_tokens, attempt_counts
-
-from test_config import VALID
 
 
 def request() -> AgentRequest:

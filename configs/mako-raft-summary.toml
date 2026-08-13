@@ -1,0 +1,3 @@
+repo = "../../mako"
+scope = "src/deptran/raft"
+results_root = "../results/mako-raft-summary"

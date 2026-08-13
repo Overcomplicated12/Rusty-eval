@@ -15,16 +15,15 @@ from .inventory import (
     FUNCTION_RE,
     GLOBAL_RE,
     SOURCE_SUFFIXES,
-    TYPEDEF_RE,
     TYPE_RE,
+    TYPEDEF_RE,
     _brace_depth_before,
     _line_number,
     _matching_brace,
     detect_features,
-    sample,
     write_outputs,
 )
-from .models import Bucket, Declaration, INVENTORY_METHODOLOGY_VERSION_V2
+from .models import INVENTORY_METHODOLOGY_VERSION_V2, Declaration
 from .rules_v2 import classify
 
 

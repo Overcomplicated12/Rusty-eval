@@ -7,7 +7,7 @@ from enum import StrEnum
 from pathlib import Path
 from typing import Any
 
-from . import RUST_BASELINE_SCHEMA_VERSION, RUST_BASELINE_SCANNER_VERSION
+from . import RUST_BASELINE_SCANNER_VERSION, RUST_BASELINE_SCHEMA_VERSION
 
 
 class SourceKind(StrEnum):

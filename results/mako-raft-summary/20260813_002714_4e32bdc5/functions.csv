@@ -1,0 +1,687 @@
+file,qualified_name,start_line,end_line,source_kind,generated,rustycpp_status,migration_class,reason
+src/deptran/raft/channel_transport.hpp,is_dropped,15,70,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/channel_transport.hpp,channel_faults_drop_matches,21,61,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/channel_transport.hpp,channel_faults_partitions_block,27,63,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/channel_transport.hpp,channel_envelope_matches_destination,32,57,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/channel_transport.hpp,new,45,120,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/channel_transport.hpp,is_dropped,52,99,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/channel_transport.hpp,reset_faults,57,96,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/channel_transport.hpp,faults_mut,62,93,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/channel_transport.hpp,new,76,197,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/channel_transport.hpp,self_site_id,86,110,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/channel_transport.hpp,send_append_entries,91,268,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/channel_transport.hpp,send_empty_append_entries,100,289,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/channel_transport.hpp,send_vote,109,266,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/channel_transport.hpp,send_timeout_now,117,288,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/channel_transport.hpp,send_install_snapshot,125,306,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/channel_transport.hpp,send_vote_durable,134,313,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/channel_transport.hpp,send_append_entries_durable,142,524,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/channel_transport.hpp,send_notify_restart,154,320,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/channel_transport.hpp,channel_faults_is_dropped,103,106,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/channel_transport.hpp,channel_faults_find_partition,118,120,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/channel_transport.hpp,register_site,141,141,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/channel_transport.hpp,send,148,148,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/channel_transport.hpp,drop_direction,159,159,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/channel_transport.hpp,partition,162,162,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/channel_transport.hpp,reset_faults,171,171,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/channel_transport.hpp,channel_transport_send_append_entries_cpp,202,207,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,D_BOUNDARY,external/runtime/raw-pointer boundary
+src/deptran/raft/channel_transport.hpp,channel_transport_send_empty_append_entries_cpp,221,226,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,D_BOUNDARY,external/runtime/raw-pointer boundary
+src/deptran/raft/channel_transport.hpp,channel_transport_send_vote_cpp,240,244,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,D_BOUNDARY,external/runtime/raw-pointer boundary
+src/deptran/raft/channel_transport.hpp,channel_transport_send_timeout_now_cpp,258,263,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,D_BOUNDARY,external/runtime/raw-pointer boundary
+src/deptran/raft/channel_transport.hpp,channel_transport_send_install_snapshot_cpp,277,282,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,D_BOUNDARY,external/runtime/raw-pointer boundary
+src/deptran/raft/channel_transport.hpp,channel_transport_send_vote_durable_cpp,296,300,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,D_BOUNDARY,external/runtime/raw-pointer boundary
+src/deptran/raft/channel_transport.hpp,channel_transport_send_append_entries_durable_cpp,310,315,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,D_BOUNDARY,external/runtime/raw-pointer boundary
+src/deptran/raft/channel_transport.hpp,channel_transport_send_notify_restart_cpp,325,328,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/channel_transport.hpp,core_,344,344,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/channel_transport.hpp,make_channel_transport,417,419,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/channel_transport.hpp,rx_,432,432,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/channel_transport.hpp,step,435,435,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/channel_transport.hpp,step_blocking,444,444,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/channel_transport.hpp,run_until_empty,453,453,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/commo.cc,commo_share_int_event,37,38,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,C_LOCAL_REFACTOR,"ownership, callback, threading, or template shape"
+src/deptran/raft/commo.cc,Communicator,52,55,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/commo.h,commo_notify_restart_is_pending,9,53,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/commo.h,commo_notify_restart_is_acknowledged,12,61,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/commo.h,commo_notify_restart_is_down,16,57,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/commo.h,commo_quorum_should_record_vote,22,53,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/commo.h,commo_quorum_should_advance_term,25,50,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/commo.h,defaults,41,93,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/commo.h,apply_reply,46,344,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/commo.h,commo_append_entries_empty_from_cmd,62,76,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/commo.h,commo_append_entries_reply_lost,65,114,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/commo.h,commo_append_entries_done_from_reply,71,135,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/commo.h,commo_proxy_is_target,77,108,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/commo.h,commo_proxy_is_self,81,110,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/commo.h,commo_future_failed,85,106,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/commo.h,commo_future_result_ok,89,100,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/commo.h,commo_should_send_empty_append_entries,93,107,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/commo.h,commo_callback_is_set,97,115,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/commo.h,commo_should_track_notify_restart_peer,101,129,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/commo.h,commo_retry_has_pending_sites,106,134,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/commo.h,commo_make_append_entries_reply,110,301,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/commo.h,commo_make_vote_reply,124,199,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/commo.h,commo_ack_type_is_memory,140,180,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/commo.h,commo_ack_type_is_durable,143,184,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/commo.h,defaults,158,206,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/commo.h,apply_reply,163,304,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/commo.h,new,183,335,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/commo.h,self_site_id,191,229,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/commo.h,set_self_site_id,196,241,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/commo.h,self_par_id,201,238,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/commo.h,set_self_par_id,206,249,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/commo.h,new,218,316,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/commo.h,statuses,225,254,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/commo.h,statuses_mut,230,263,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/commo.h,HasAcceptedValue,57,57,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/commo.h,FeedResponse,62,62,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/commo.h,FeedResponse,81,81,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/commo.h,Term,86,86,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/commo.h,GetSpecVoters,91,91,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/commo.h,send_append_entries_results_defaults,105,107,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/commo.h,append_entries_response_defaults,137,139,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/coordinator.cc,Coordinator,34,36,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/coordinator.h,coordinator_raft_phase_value,2,23,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/coordinator.h,coordinator_raft_phase_is_prepare,5,21,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/coordinator.h,coordinator_raft_phase_is_accept,9,25,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/coordinator.h,coordinator_raft_phase_is_commit,13,29,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/coordinator.h,coordinator_raft_majority_count,17,42,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/coordinator.h,coordinator_raft_should_handle_wrong_leader,21,37,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/coordinator.h,coordinator_raft_command_kind_matches,25,52,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/coordinator.h,coordinator_raft_should_create_fallback_view,29,48,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/coordinator.h,coordinator_raft_should_wait_for_commit,33,66,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/coordinator.h,coordinator_raft_term_changed,38,73,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/coordinator.h,coordinator_raft_append_succeeded,42,56,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/coordinator.h,coordinator_raft_should_learn,46,61,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/coordinator.h,coordinator_raft_should_run_leader_init_path,50,87,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/coordinator.h,coordinator_raft_should_skip_to_commit_from_init,55,93,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/coordinator.h,coordinator_raft_should_append_from_prepare,60,84,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/coordinator.h,coordinator_raft_should_finish_accept_without_learn,64,102,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/coordinator.h,coordinator_raft_submission_is_available,69,105,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/coordinator.h,coordinator_raft_append_is_available,74,98,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/coordinator.h,coordinator_raft_callback_is_ready,78,96,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/coordinator.h,coordinator_raft_append_should_cancel_on_term_change,82,117,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/coordinator.h,new,98,378,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/coordinator.h,curr_ballot,108,145,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/coordinator.h,set_curr_ballot,113,156,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/coordinator.h,in_submission,118,157,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/coordinator.h,set_in_submission,123,167,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/coordinator.h,in_append_entries,128,171,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/coordinator.h,set_in_append_entries,133,181,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/coordinator.h,min_index,138,173,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/coordinator.h,set_min_index,143,183,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/coordinator.h,n_replica,77,77,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/coordinator.h,GetNextSlot,89,89,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/coordinator.h,GetQuorum,96,96,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/file_snapshot_manager.hpp,file_snapshot_path,2,145,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/file_snapshot_manager.hpp,file_snapshot_temp_path,8,155,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/file_snapshot_manager.hpp,file_snapshot_advance_offset,17,36,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/file_snapshot_manager.hpp,file_snapshot_reader_bytes_to_read,20,118,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/file_snapshot_manager.hpp,file_snapshot_reader_is_complete,31,65,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/file_snapshot_manager.hpp,file_snapshot_should_prune,37,76,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/file_snapshot_manager.hpp,file_snapshot_has_latest,42,66,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/file_snapshot_manager.hpp,file_snapshot_retention_start,46,113,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/file_snapshot_manager.hpp,file_snapshot_should_delete_for_retention,55,120,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/file_snapshot_manager.hpp,file_snapshot_metadata_from_name_parts,61,144,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/file_snapshot_manager.hpp,new,83,405,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/file_snapshot_manager.hpp,Cleanup,100,278,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/file_snapshot_manager.hpp,Write,107,473,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/file_snapshot_manager.hpp,Finalize,119,546,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/file_snapshot_manager.hpp,Abort,130,307,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/file_snapshot_manager.hpp,GetOffset,137,163,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/file_snapshot_manager.hpp,new,154,349,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/file_snapshot_manager.hpp,Open,166,493,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/file_snapshot_manager.hpp,Read,177,538,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/file_snapshot_manager.hpp,IsComplete,190,375,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/file_snapshot_manager.hpp,GetMetadata,197,266,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/file_snapshot_manager.hpp,GetOffset,202,233,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/file_snapshot_manager.hpp,IsValid,207,232,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/file_snapshot_manager.hpp,new,219,291,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/file_snapshot_manager.hpp,EnsureDirectory,226,302,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/file_snapshot_manager.hpp,BeginSnapshot,231,454,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/file_snapshot_manager.hpp,TakeSnapshot,241,573,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/file_snapshot_manager.hpp,BeginLoad,253,353,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/file_snapshot_manager.hpp,LoadLatestSnapshot,261,474,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/file_snapshot_manager.hpp,GetLatestSnapshot,271,337,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/file_snapshot_manager.hpp,ListSnapshots,276,340,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/file_snapshot_manager.hpp,HasSnapshotAtOrAfter,281,367,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/file_snapshot_manager.hpp,PruneSnapshots,286,369,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/file_snapshot_manager.hpp,DeleteAllSnapshots,291,361,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/file_snapshot_manager.hpp,GetStoragePath,296,368,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/file_snapshot_manager.hpp,file_snapshot_metadata_from_name_parts_cpp,56,60,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/file_snapshot_manager.hpp,file_snapshot_writer_cleanup_cpp,73,75,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/file_snapshot_manager.hpp,file_snapshot_writer_write_cpp,83,88,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/file_snapshot_manager.hpp,file_snapshot_writer_finalize_cpp,99,105,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/file_snapshot_manager.hpp,file_snapshot_writer_abort_cpp,157,159,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/file_snapshot_manager.hpp,file_snapshot_reader_open_cpp,170,174,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,D_BOUNDARY,external/runtime/raw-pointer boundary
+src/deptran/raft/file_snapshot_manager.hpp,file_snapshot_reader_read_cpp,231,236,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/file_snapshot_manager.hpp,file_snapshot_reader_is_complete_cpp,254,256,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/file_snapshot_manager.hpp,core_,282,283,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/file_snapshot_manager.hpp,FileSnapshotReader,326,327,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/file_snapshot_manager.hpp,file_snapshot_manager_ensure_directory_cpp,359,360,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/file_snapshot_manager.hpp,file_snapshot_manager_begin_snapshot_cpp,369,370,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/file_snapshot_manager.hpp,file_snapshot_manager_list_cpp,381,382,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/file_snapshot_manager.hpp,file_snapshot_manager_latest_cpp,426,427,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/file_snapshot_manager.hpp,file_snapshot_manager_begin_load_cpp,436,437,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/file_snapshot_manager.hpp,file_snapshot_manager_load_latest_cpp,449,451,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/file_snapshot_manager.hpp,file_snapshot_manager_has_at_or_after_cpp,483,484,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/file_snapshot_manager.hpp,file_snapshot_manager_prune_cpp,495,496,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/file_snapshot_manager.hpp,file_snapshot_manager_delete_all_cpp,515,516,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/file_snapshot_manager.hpp,file_snapshot_manager_apply_retention_cpp,533,534,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/file_snapshot_manager.hpp,file_snapshot_manager_take_snapshot_cpp,558,560,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/file_snapshot_manager.hpp,FileSnapshotManager,588,589,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/frame.cc,raft_frame_is_lab_test_config,2,50,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/frame.cc,raft_frame_can_register_lab_scheduler,6,42,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/frame.cc,raft_frame_all_schedulers_created,11,48,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/frame.cc,raft_frame_all_commos_created,16,51,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/frame.cc,raft_frame_should_create_test_fiber,21,39,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/log_storage.hpp,defaults,13,47,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/log_storage.hpp,with_slot_term,16,66,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/log_storage.hpp,with_command,20,81,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/log_storage.hpp,save,24,63,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/log_storage.hpp,load,28,67,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/log_storage.hpp,log_entry_defaults,59,61,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/log_storage.hpp,log_entry_with_slot_term,72,73,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/log_storage.hpp,log_entry_with_command,79,83,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/log_storage.hpp,log_entry_less_than,89,90,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/log_storage.hpp,log_entry_equals,93,94,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/log_storage.hpp,log_entry_save,123,123,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/log_storage.hpp,log_entry_load,147,147,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/memory_log_storage.hpp,memory_log_storage_is_usable,2,15,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_log_storage.hpp,memory_log_storage_range_valid,5,22,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_log_storage.hpp,memory_log_storage_empty_from_size,9,24,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_log_storage.hpp,memory_log_storage_index_or_zero,13,51,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_log_storage.hpp,memory_log_storage_metadata_found,21,32,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_log_storage.hpp,new,35,291,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_log_storage.hpp,get,44,127,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_log_storage.hpp,put,49,134,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_log_storage.hpp,remove,54,144,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_log_storage.hpp,get_range,59,151,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_log_storage.hpp,put_batch,64,157,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_log_storage.hpp,remove_range,69,168,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_log_storage.hpp,get_first_index,74,156,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_log_storage.hpp,get_last_index,79,160,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_log_storage.hpp,get_term,84,168,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_log_storage.hpp,size,89,164,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_log_storage.hpp,empty,94,155,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_log_storage.hpp,set_metadata,99,334,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_log_storage.hpp,get_metadata,108,288,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_log_storage.hpp,sync,115,178,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_log_storage.hpp,close,120,294,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_log_storage.hpp,is_open,127,190,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_log_storage.hpp,clear,132,307,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_log_storage.hpp,reopen,139,177,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_log_storage.hpp,get_all,144,222,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_log_storage.hpp,memory_log_storage_get_cpp,42,45,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/memory_log_storage.hpp,memory_log_storage_put_cpp,58,61,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/memory_log_storage.hpp,memory_log_storage_remove_cpp,71,74,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/memory_log_storage.hpp,memory_log_storage_get_range_cpp,83,87,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/memory_log_storage.hpp,memory_log_storage_put_batch_cpp,105,108,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/memory_log_storage.hpp,memory_log_storage_remove_range_cpp,120,124,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/memory_log_storage.hpp,memory_log_storage_first_index_cpp,139,141,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/memory_log_storage.hpp,memory_log_storage_last_index_cpp,151,153,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/memory_log_storage.hpp,memory_log_storage_term_cpp,163,166,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/memory_log_storage.hpp,memory_log_storage_size_cpp,175,177,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/memory_log_storage.hpp,memory_log_storage_set_metadata_cpp,186,190,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/memory_log_storage.hpp,memory_log_storage_get_metadata_cpp,200,203,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/memory_log_storage.hpp,memory_log_storage_close_cpp,216,219,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/memory_log_storage.hpp,memory_log_storage_clear_cpp,236,239,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/memory_log_storage.hpp,memory_log_storage_get_all_cpp,255,257,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/memory_log_storage.hpp,reopen,397,397,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/memory_snapshot_manager.hpp,memory_snapshot_metadata,2,194,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_snapshot_manager.hpp,memory_snapshot_advance_offset,15,34,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_snapshot_manager.hpp,memory_snapshot_reader_bytes_to_read,18,119,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_snapshot_manager.hpp,memory_snapshot_reader_is_complete,29,57,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_snapshot_manager.hpp,new,51,414,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_snapshot_manager.hpp,Write,71,324,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_snapshot_manager.hpp,Finalize,81,635,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_snapshot_manager.hpp,Abort,95,316,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_snapshot_manager.hpp,GetOffset,104,130,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_snapshot_manager.hpp,new,118,247,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_snapshot_manager.hpp,Read,127,437,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_snapshot_manager.hpp,IsComplete,139,221,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_snapshot_manager.hpp,GetMetadata,144,211,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_snapshot_manager.hpp,GetOffset,149,175,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_snapshot_manager.hpp,new,164,272,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_snapshot_manager.hpp,BeginSnapshot,174,620,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_snapshot_manager.hpp,TakeSnapshot,187,682,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_snapshot_manager.hpp,BeginLoad,201,396,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_snapshot_manager.hpp,LoadLatestSnapshot,209,564,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_snapshot_manager.hpp,GetLatestSnapshot,221,302,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_snapshot_manager.hpp,ListSnapshots,226,305,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_snapshot_manager.hpp,HasSnapshotAtOrAfter,231,434,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_snapshot_manager.hpp,PruneSnapshots,238,491,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_snapshot_manager.hpp,DeleteAllSnapshots,246,454,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_snapshot_manager.hpp,GetStoragePath,253,333,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/memory_snapshot_manager.hpp,memory_snapshot_copy_from_raw,50,53,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/memory_snapshot_manager.hpp,memory_snapshot_writer_finalize_cpp,62,69,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,C_LOCAL_REFACTOR,"ownership, callback, threading, or template shape"
+src/deptran/raft/memory_snapshot_manager.hpp,memory_snapshot_writer_abort_cpp,80,82,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/memory_snapshot_manager.hpp,memory_snapshot_copy_to_raw,90,94,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,D_BOUNDARY,external/runtime/raw-pointer boundary
+src/deptran/raft/memory_snapshot_manager.hpp,memory_snapshot_reader_is_complete_cpp,105,106,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/memory_snapshot_manager.hpp,core_,130,131,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/memory_snapshot_manager.hpp,core_,163,163,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/memory_snapshot_manager.hpp,memory_snapshot_manager_begin_snapshot_cpp,188,190,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/memory_snapshot_manager.hpp,memory_snapshot_manager_take_snapshot_cpp,196,198,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/memory_snapshot_manager.hpp,memory_snapshot_manager_begin_load_cpp,209,211,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/memory_snapshot_manager.hpp,memory_snapshot_manager_load_latest_cpp,217,219,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,D_BOUNDARY,external/runtime/raw-pointer boundary
+src/deptran/raft/memory_snapshot_manager.hpp,memory_snapshot_manager_latest_cpp,228,229,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/memory_snapshot_manager.hpp,memory_snapshot_manager_list_cpp,235,236,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/memory_snapshot_manager.hpp,memory_snapshot_manager_has_at_or_after_cpp,242,243,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/memory_snapshot_manager.hpp,memory_snapshot_manager_prune_cpp,248,250,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/memory_snapshot_manager.hpp,memory_snapshot_manager_delete_all_cpp,261,262,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/memory_snapshot_manager.hpp,core_,284,284,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/quorum.hpp,raft_quorum_reached,2,26,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/quorum.hpp,raft_quorum_majority_count,7,28,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/quorum.hpp,raft_quorum_count_reached,10,31,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/quorum.hpp,raft_quorum_count_below,14,34,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/quorum.hpp,raft_quorum_share_ready_event,57,58,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,C_LOCAL_REFACTOR,"ownership, callback, threading, or template shape"
+src/deptran/raft/quorum.hpp,n_total_,75,79,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/quorum.hpp,on_reply,88,88,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/quorum.hpp,wait_until_quorum,106,106,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/raft_node.hpp,new,8,77,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/raft_node.hpp,handle_vote,15,118,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/raft_node.hpp,handle_vote_durable,23,91,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/raft_node.hpp,handle_append_entries,30,215,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/raft_node.hpp,handle_empty_append_entries,40,230,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/raft_node.hpp,handle_append_entries_durable,51,128,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/raft_node.hpp,handle_timeout_now,59,151,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/raft_node.hpp,handle_notify_restart,67,137,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/raft_node.hpp,handle_install_snapshot,74,139,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/raft_node.hpp,self_site_id,81,105,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/raft_node.hpp,new,96,324,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/raft_node.hpp,id,106,128,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/raft_node.hpp,is_leader,111,146,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/raft_node.hpp,set_is_leader,116,156,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/raft_node.hpp,commit_index,121,159,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/raft_node.hpp,set_commit_index,126,169,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/raft_node.hpp,current_term,131,169,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/raft_node.hpp,set_current_term,136,179,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/raft_node.hpp,DummyDispatcher,56,57,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/raft_node.hpp,state_core_,103,107,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/raft_node.hpp,take_dispatcher,117,117,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/raft_node.hpp,force_leader,133,133,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/raft_node.hpp,set_commit_index,134,134,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/raft_node.hpp,set_current_term,135,135,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/raft_worker.cc,raft_worker_should_start_submit_thread,2,16,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/raft_worker.cc,raft_worker_should_stop_submit_thread,5,18,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/raft_worker.cc,raft_worker_should_enqueue,9,41,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/raft_worker.cc,raft_worker_batch_limit,14,53,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/raft_worker.cc,raft_worker_wait_for_submit,22,45,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/raft_worker.cc,raft_worker_queue_has_work,26,44,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/raft_worker.cc,raft_worker_submit_loop_should_wake,30,66,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/raft_worker.cc,raft_worker_submit_loop_should_stop,35,70,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/raft_worker.cc,raft_worker_submit_loop_should_take,40,80,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/raft_worker.cc,raft_worker_partition_matches,46,117,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/raft_worker.cc,raft_worker_can_register_callback,52,71,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/raft_worker.cc,raft_worker_leader_flag_from_bool,56,90,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/raft_worker.cc,raft_worker_is_leader_flag_set,64,84,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/raft_worker.cc,raft_worker_should_notify_default_partition,68,100,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/raft_worker.cc,raft_worker_partition_callback_available,72,99,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/raft_worker.cc,raft_worker_global_callback_available,77,95,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/raft_worker.cc,raft_worker_has_command_payload,81,96,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/raft_worker.cc,raft_worker_should_buffer_unreplayed,85,130,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/raft_worker.cc,raft_worker_pending_log_is_current,91,127,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/raft_worker.cc,raft_worker_leadership_changed,96,141,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/raft_worker.cc,raft_worker_should_count_submission,101,135,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/raft_worker.cc,state_core_,56,56,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/raft_worker.h,new,17,217,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/raft_worker.h,batch_limit,26,63,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/raft_worker.h,set_batch_limit,31,73,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/raft_worker.h,cur_epoch,36,71,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/raft_worker.h,set_cur_epoch,41,81,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/raft_worker.h,is_leader,46,81,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/raft_worker.h,set_is_leader,51,91,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/raft_worker.h,SetCurrentEpoch,192,192,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/raft_worker.h,GetPollThreadWorker,241,241,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/read_raft_disk.cc,take_rocksdb_error,12,13,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/read_raft_disk.cc,copy_db_value,22,23,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/read_raft_disk.cc,ReadUInt64,33,33,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/read_raft_disk.cc,ReadUInt32,42,42,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/read_raft_disk.cc,DecodeRaftData,59,60,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/read_raft_disk.cc,PrintUsage,95,96,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/read_raft_disk.cc,main,102,103,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/recovery_manager.hpp,defaults,18,58,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/recovery_manager.hpp,for_replica,21,87,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/recovery_manager.hpp,defaults,39,79,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/recovery_manager.hpp,success_fresh,42,87,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/recovery_manager.hpp,failure,46,90,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/recovery_manager.hpp,recovery_mode_is_fresh_start,53,130,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/recovery_manager.hpp,recovery_mode_needs_recovery,56,99,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/recovery_manager.hpp,recovery_result_mark_fresh_success,60,122,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/recovery_manager.hpp,recovery_result_begin,65,150,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/recovery_manager.hpp,recovery_result_mark_success,71,197,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/recovery_manager.hpp,recovery_should_clear_forced_fresh,79,144,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/recovery_manager.hpp,recovery_storage_open_failed,84,122,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/recovery_manager.hpp,recovery_fresh_start_should_attach_storage,89,183,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/recovery_manager.hpp,recovery_normal_storage_missing,94,153,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/recovery_manager.hpp,recovery_replay_failed,99,116,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/recovery_manager.hpp,recovery_result_assign_recovery_time,103,152,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/recovery_manager.hpp,new,118,336,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/recovery_manager.hpp,set_detected_mode,127,170,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/recovery_manager.hpp,mark_initialized,132,173,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/recovery_manager.hpp,needs_recovery,137,206,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/recovery_manager.hpp,detected_mode,142,181,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/recovery_manager.hpp,is_initialized,147,184,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/recovery_manager.hpp,storage_path,152,192,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/recovery_manager.hpp,recovery_config_defaults,47,49,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/recovery_manager.hpp,recovery_config_for_replica,58,60,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/recovery_manager.hpp,recovery_result_defaults,84,86,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/recovery_manager.hpp,recovery_result_success_fresh,97,98,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/recovery_manager.hpp,recovery_result_failure,104,105,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/recovery_manager.hpp,RecoveryManager,132,134,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/recovery_manager.hpp,create_storage,160,160,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/recovery_manager.hpp,recover,228,228,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/replicated_db.cc,raft_,144,144,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/replicated_db.cc,for,396,397,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/replicated_db.h,defaults,25,62,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/replicated_db.h,make,28,75,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/replicated_db.h,put,34,105,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/replicated_db.h,delete_key,38,109,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/replicated_db.h,replicated_db_command_defaults_dsl,45,83,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/replicated_db.h,replicated_db_command_put_dsl,48,91,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/replicated_db.h,replicated_db_command_delete_dsl,53,92,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/replicated_db.h,replicated_db_command_batch_dsl,57,95,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/replicated_db.h,replicated_db_has_command_payload,65,80,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/replicated_db.h,replicated_db_should_skip_applied,68,101,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/replicated_db.h,replicated_db_command_kind_matches,73,100,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/replicated_db.h,replicated_db_command_is_put,77,115,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/replicated_db.h,replicated_db_command_is_delete,81,122,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/replicated_db.h,replicated_db_command_is_batch,85,125,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/replicated_db.h,replicated_db_command_should_encode_batch,89,148,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/replicated_db.h,replicated_db_command_kind_is_known,94,225,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/replicated_db.h,replicated_db_command_apply_action,100,191,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/replicated_db.h,replicated_db_can_submit,114,149,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/replicated_db.h,replicated_db_commit_succeeded,120,142,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/replicated_db.h,replicated_db_commit_pending,124,147,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/replicated_db.h,replicated_db_commit_callback_state,128,165,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/replicated_db.h,replicated_db_can_get,136,165,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/replicated_db.h,replicated_db_read_found,140,159,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/replicated_db.h,replicated_db_can_linearizable_read,144,171,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/replicated_db.h,replicated_db_snapshot_has_header,149,164,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/replicated_db.h,replicated_db_snapshot_is_lz4,153,181,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/replicated_db.h,replicated_db_snapshot_is_uncompressed,158,195,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/replicated_db.h,replicated_db_snapshot_has_bytes,163,212,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/replicated_db.h,new,178,348,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/replicated_db.h,last_applied_index,186,230,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/replicated_db.h,set_last_applied_index,191,240,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/replicated_db.h,compression_enabled,196,241,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/replicated_db.h,set_compression_enabled,201,251,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/replicated_db.h,kv_operation_defaults,27,29,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/replicated_db.h,kv_operation_make,36,39,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/rocksdb_log_storage.hpp,rocksdb_log_copy_slice,2,45,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/rocksdb_log_storage.hpp,rocksdb_log_make_log_key,5,48,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/rocksdb_log_storage.hpp,rocksdb_log_make_meta_key,9,41,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/rocksdb_log_storage.hpp,rocksdb_log_storage_ready,13,36,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/rocksdb_log_storage.hpp,rocksdb_log_range_valid,17,34,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/rocksdb_log_storage.hpp,rocksdb_log_empty_from_size,21,36,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/rocksdb_log_storage.hpp,rocksdb_log_value_present,25,40,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/rocksdb_log_storage.hpp,rocksdb_log_key_in_range,29,62,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/rocksdb_log_storage.hpp,new,43,149,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/rocksdb_log_storage.hpp,Destroy,50,118,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/rocksdb_log_storage.hpp,open,55,115,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/rocksdb_log_storage.hpp,get,60,128,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/rocksdb_log_storage.hpp,put,65,131,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/rocksdb_log_storage.hpp,remove,70,141,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/rocksdb_log_storage.hpp,get_range,75,152,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/rocksdb_log_storage.hpp,put_batch,80,154,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/rocksdb_log_storage.hpp,remove_range,85,165,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/rocksdb_log_storage.hpp,get_first_index,90,157,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/rocksdb_log_storage.hpp,get_last_index,95,161,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/rocksdb_log_storage.hpp,get_term,100,169,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/rocksdb_log_storage.hpp,size,105,165,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/rocksdb_log_storage.hpp,empty,110,171,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/rocksdb_log_storage.hpp,set_metadata,115,195,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/rocksdb_log_storage.hpp,get_metadata,121,194,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/rocksdb_log_storage.hpp,sync,126,186,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/rocksdb_log_storage.hpp,close,131,192,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/rocksdb_log_storage.hpp,is_open,136,194,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/rocksdb_log_storage.hpp,clear,141,202,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/rocksdb_log_storage.hpp,get_db_path,146,209,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/rocksdb_log_storage.hpp,rocksdb_log_take_error_cpp,33,34,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/rocksdb_log_storage.hpp,rocksdb_log_copy_slice_cpp,43,44,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/rocksdb_log_storage.hpp,rocksdb_log_make_log_key_cpp,50,51,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/rocksdb_log_storage.hpp,take_rocksdb_error,96,96,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,D_BOUNDARY,external/runtime/raw-pointer boundary
+src/deptran/raft/rocksdb_log_storage.hpp,copy_slice,101,101,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,D_BOUNDARY,external/runtime/raw-pointer boundary
+src/deptran/raft/rocksdb_log_storage.hpp,RocksDBLogStorageState,148,149,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,D_BOUNDARY,external/runtime/raw-pointer boundary
+src/deptran/raft/rocksdb_log_storage.hpp,open,201,201,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,D_BOUNDARY,external/runtime/raw-pointer boundary
+src/deptran/raft/rocksdb_log_storage.hpp,put,262,262,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,D_BOUNDARY,external/runtime/raw-pointer boundary
+src/deptran/raft/rocksdb_log_storage.hpp,remove,284,284,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,D_BOUNDARY,external/runtime/raw-pointer boundary
+src/deptran/raft/rocksdb_log_storage.hpp,put_batch,365,365,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,D_BOUNDARY,external/runtime/raw-pointer boundary
+src/deptran/raft/rocksdb_log_storage.hpp,remove_range,397,397,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,D_BOUNDARY,external/runtime/raw-pointer boundary
+src/deptran/raft/rocksdb_log_storage.hpp,set_metadata,585,585,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,D_BOUNDARY,external/runtime/raw-pointer boundary
+src/deptran/raft/rocksdb_log_storage.hpp,sync,634,634,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,D_BOUNDARY,external/runtime/raw-pointer boundary
+src/deptran/raft/rocksdb_log_storage.hpp,close,657,657,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/rocksdb_log_storage.hpp,clear,678,678,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,D_BOUNDARY,external/runtime/raw-pointer boundary
+src/deptran/raft/rocksdb_log_storage.hpp,destroy,737,737,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,D_BOUNDARY,external/runtime/raw-pointer boundary
+src/deptran/raft/rocksdb_log_storage.hpp,rocksdb_log_storage_state_delete_cpp,762,763,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/rocksdb_log_storage.hpp,rocksdb_log_storage_open_cpp,768,768,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,D_BOUNDARY,external/runtime/raw-pointer boundary
+src/deptran/raft/rocksdb_log_storage.hpp,rocksdb_log_storage_get_cpp,773,774,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/rocksdb_log_storage.hpp,rocksdb_log_storage_put_cpp,779,780,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/rocksdb_log_storage.hpp,rocksdb_log_storage_remove_cpp,785,786,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/rocksdb_log_storage.hpp,rocksdb_log_storage_get_range_cpp,791,792,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/rocksdb_log_storage.hpp,rocksdb_log_storage_put_batch_cpp,797,798,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/rocksdb_log_storage.hpp,rocksdb_log_storage_remove_range_cpp,803,804,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/rocksdb_log_storage.hpp,rocksdb_log_storage_first_index_cpp,809,810,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/rocksdb_log_storage.hpp,rocksdb_log_storage_last_index_cpp,815,816,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/rocksdb_log_storage.hpp,rocksdb_log_storage_term_cpp,821,822,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/rocksdb_log_storage.hpp,rocksdb_log_storage_size_cpp,827,828,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/rocksdb_log_storage.hpp,rocksdb_log_storage_empty_cpp,833,834,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/rocksdb_log_storage.hpp,rocksdb_log_storage_set_metadata_cpp,839,841,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/rocksdb_log_storage.hpp,rocksdb_log_storage_get_metadata_cpp,846,847,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/rocksdb_log_storage.hpp,rocksdb_log_storage_sync_cpp,852,852,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/rocksdb_log_storage.hpp,rocksdb_log_storage_close_cpp,857,857,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,D_BOUNDARY,external/runtime/raw-pointer boundary
+src/deptran/raft/rocksdb_log_storage.hpp,rocksdb_log_storage_is_open_cpp,862,863,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/rocksdb_log_storage.hpp,rocksdb_log_storage_clear_cpp,868,868,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/rocksdb_log_storage.hpp,rocksdb_log_storage_destroy_cpp,879,879,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/rocksdb_log_storage.hpp,RocksDBLogStorage,887,888,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/rocksdb_log_storage.hpp,open,894,895,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,D_BOUNDARY,external/runtime/raw-pointer boundary
+src/deptran/raft/rocksdb_log_storage.hpp,destroy,973,973,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,D_BOUNDARY,external/runtime/raw-pointer boundary
+src/deptran/raft/rrr_transport.hpp,new,10,133,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/rrr_transport.hpp,self_site_id,20,44,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/rrr_transport.hpp,send_vote_durable,25,187,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/rrr_transport.hpp,send_append_entries_durable,33,212,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/rrr_transport.hpp,send_notify_restart,42,147,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/rrr_transport.hpp,send_append_entries,49,209,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/rrr_transport.hpp,send_empty_append_entries,58,230,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/rrr_transport.hpp,send_vote,67,167,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/rrr_transport.hpp,send_timeout_now,74,181,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/rrr_transport.hpp,send_install_snapshot,81,245,RUST_DSL,False,DSL_EXPLICIT_UNSAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/rrr_transport.hpp,rrr_transport_send_vote_durable_cpp,36,39,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/rrr_transport.hpp,rrr_transport_send_append_entries_durable_cpp,47,51,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/rrr_transport.hpp,rrr_transport_send_notify_restart_cpp,60,62,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/rrr_transport.hpp,rrr_transport_send_append_entries_cpp,71,75,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/rrr_transport.hpp,rrr_transport_send_empty_append_entries_cpp,95,99,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/rrr_transport.hpp,rrr_transport_send_vote_cpp,125,128,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/rrr_transport.hpp,rrr_transport_send_timeout_now_cpp,146,149,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/rrr_transport.hpp,rrr_transport_send_install_snapshot_cpp,165,169,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/rrr_transport.hpp,core_,188,188,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/rrr_transport.hpp,make_rrr_transport,256,258,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/server.cc,ParseEnvUint64OrDefault,86,87,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,D_BOUNDARY,external/runtime/raw-pointer boundary
+src/deptran/raft/server.cc,GetPreferredLeaderGracePeriodUs,104,105,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/server.cc,GetNonPreferredGraceElectionMinUs,111,112,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/server.cc,GetNonPreferredGraceElectionMaxUs,118,119,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/server.cc,RandomInRangeUs,125,126,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/server.cc,GetPreferredElectionTimeoutUs,138,139,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/server.cc,GetNonPreferredGraceElectionTimeoutUs,142,143,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/server.cc,GetNonPreferredSteadyElectionTimeoutUs,147,148,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/server.cc,GetAppendEntriesBatchMaxEntries,151,152,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/server.cc,JetpackRecoveryEnabled,667,667,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,D_BOUNDARY,external/runtime/raw-pointer boundary
+src/deptran/raft/server.h,server_step_down_reason_is_unsecured_failure,16,64,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,server_step_down_reason_is_secured_failure,19,65,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,server_step_down_reason_is_higher_term,23,65,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,server_commit_status_is_durable,27,64,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,server_log_index_at_or_below,31,54,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,server_log_index_above,35,57,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,server_preferred_leader_is_configured,39,75,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,server_site_is_preferred_leader,43,131,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,server_leadership_monitor_should_start,49,99,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,server_leadership_transfer_preconditions_allow,55,135,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,server_preferred_replica_is_caught_up,62,105,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,server_local_commit_has_caught_up,67,114,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,server_election_timeout_has_fired,72,123,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,server_leadership_stable_window_elapsed,78,117,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,server_random_range_needs_swap,83,110,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,server_random_range_is_single_point,87,115,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,server_random_range_cap,91,141,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,server_election_in_startup_grace_period,99,154,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,server_vote_term_is_stale,105,140,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,server_vote_is_already_granted_to_other,109,193,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,server_vote_is_idempotent,116,181,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,server_candidate_log_is_at_least,123,238,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,server_vote_request_is_eligible,131,438,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,server_append_term_is_acceptable,148,182,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,server_append_prefix_is_compacted_miss,152,237,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,server_append_index_is_acceptable,158,218,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,server_append_prev_term_is_acceptable,164,224,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,server_append_backoff_next_index,170,292,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,server_append_request_is_acceptable,187,363,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,server_commit_index_clamp,200,270,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,server_commit_index_should_advance,208,286,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,server_log_entry_is_current_term,215,247,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,server_snapshot_index_is_available,219,243,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,server_snapshot_is_due,223,324,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,server_compaction_index_clamp,230,296,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,server_leadership_transition_to_leader,239,281,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,server_leadership_transition_to_follower,244,286,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,server_observed_higher_term,249,283,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,new,282,569,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,snapshot_threshold,293,337,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,set_snapshot_threshold,298,347,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,heartbeat_interval_us,303,350,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,set_heartbeat_interval_us,308,360,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,log_retention_window,313,359,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,set_log_retention_window,318,400,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,new,338,739,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,preferred_leader_site_id,349,399,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,set_preferred_leader_site_id,354,411,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,leader_last_commit_index,359,409,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,set_leader_last_commit_index,364,419,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,is_transferring_leadership,369,418,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,clear_transfer,374,428,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,start_transfer,379,493,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,leadership_transfer_start_time,385,441,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,startup_timestamp,390,433,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,set_startup_timestamp,395,447,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,new,411,768,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,config_change_pending,422,469,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,set_config_change_pending,427,479,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,pending_config_index,432,478,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,set_pending_config_index,437,488,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,catchup_threshold,442,485,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,set_catchup_threshold,447,499,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,current_config,452,487,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,current_config_mut,457,496,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,learners,462,491,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,learners_mut,467,500,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,new,483,852,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,secured_leader,494,534,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,set_secured_leader,499,544,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,secured_log_index,504,547,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,set_secured_log_index,509,557,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,spec_commit_index,514,557,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,set_spec_commit_index,519,567,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,last_spec_notified_index,524,574,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,set_last_spec_notified_index,529,584,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,last_durable_notified_index,534,587,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,set_last_durable_notified_index,539,597,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,should_advance_spec_commit,544,605,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,should_become_secured,549,622,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,should_advance_secured_index,554,615,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,should_step_down_for_quorum_loss,559,690,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,new,580,929,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,vote_for,591,625,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,set_vote_for,596,637,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,init,601,631,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,set_init,606,641,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,is_leader,611,646,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,set_is_leader,616,656,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,current_leader_id,621,664,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,set_current_leader_id,626,676,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,req_voting,631,667,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,set_req_voting,636,677,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,new,649,814,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,snapshot_index,657,697,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,set_snapshot_index,662,707,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,snapshot_term,667,706,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,set_snapshot_term,672,715,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/server.h,doVote,315,321,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/server.h,resetTimerBatch,438,439,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/server.h,resetTimer,465,465,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,D_BOUNDARY,external/runtime/raw-pointer boundary
+src/deptran/raft/server.h,randDuration,483,484,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/server.h,PersistState,491,491,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/server.h,PersistLogEntry,499,499,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/server.h,PersistCommitIndex,506,506,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/server.h,GetState,582,582,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,C_LOCAL_REFACTOR,"ownership, callback, threading, or template shape"
+src/deptran/raft/server.h,SetHeartbeatInterval,595,595,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/server.h,SetLogRetentionWindow,606,606,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/server.h,SetLocalAppend,612,612,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,C_LOCAL_REFACTOR,"ownership, callback, threading, or template shape"
+src/deptran/raft/server.h,GetInstance,682,682,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/server.h,GetRaftInstance,701,701,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/server.h,SetLogStorage,728,728,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/server.h,SetSnapshotManager,776,776,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/server.h,SetStateMachineSnapshotCallbacks,806,808,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/server.h,SetSnapshotThreshold,847,847,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/server.h,Reconnect,1059,1059,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/server.h,HandleConflicts,1072,1074,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/server.h,SetPreferredLeader,1099,1099,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,C_LOCAL_REFACTOR,"ownership, callback, threading, or template shape"
+src/deptran/raft/service.cc,raft_service_server_unavailable,2,35,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/service.cc,raft_service_default_vote_granted,6,17,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/service.cc,raft_service_default_acknowledged,10,21,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/service.cc,raft_service_default_append_ok,14,21,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/service.cc,raft_service_default_term,18,25,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/service.cc,raft_service_default_last_log_index,22,29,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/service.cc,raft_service_memory_ack_type,26,33,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/service.cc,raft_service_default_timeout_success,30,41,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/service.cc,raft_service_default_config_success,34,45,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/service.cc,raft_service_default_leader_hint,38,45,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/service.cc,raft_service_should_reconnect,42,57,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/service.cc,raft_service_notify_ack_from_reconnect,46,59,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/service.cc,raft_service_poll_thread_available,50,80,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/service.cc,state_core_,248,250,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/service.h,new,10,234,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/service.h,site_id,21,54,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/service.h,server,26,94,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/service.h,set_server,31,105,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/service.h,has_poll_thread,36,77,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/service.h,clone_poll_thread,41,160,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/snapshot_format.hpp,snapshot_header_defaults,34,402,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/snapshot_format.hpp,snapshot_header_make,50,379,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/snapshot_format.hpp,snapshot_current_time_ms,74,110,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/snapshot_format.hpp,snapshot_crc32_initial,79,107,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/snapshot_format.hpp,snapshot_crc32_update_byte,82,117,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/snapshot_format.hpp,snapshot_crc32_finalize,86,118,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/snapshot_format.hpp,snapshot_crc32,92,290,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/snapshot_format.hpp,snapshot_magic_valid,103,128,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/snapshot_format.hpp,snapshot_version_valid,106,124,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/snapshot_format.hpp,snapshot_compression_supported,110,156,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/snapshot_format.hpp,snapshot_checksum_enabled,114,164,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/snapshot_format.hpp,snapshot_checksum_size,118,183,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/snapshot_format.hpp,snapshot_expected_serialized_size,126,162,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/snapshot_format.hpp,snapshot_get_header,133,189,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/snapshot_format.hpp,snapshot_serialize,140,239,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/snapshot_format.hpp,snapshot_deserialize,151,229,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/snapshot_format.hpp,snapshot_current_time_ms_cpp,46,48,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/snapshot_format.hpp,Update,66,66,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/snapshot_format.hpp,Calculate,79,79,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/snapshot_format.hpp,calculate,86,86,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/snapshot_format.hpp,calculate,89,90,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,D_BOUNDARY,external/runtime/raw-pointer boundary
+src/deptran/raft/snapshot_format.hpp,initial_value,93,94,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/snapshot_format.hpp,finalize_value,97,98,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/snapshot_format.hpp,update_byte,101,102,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/snapshot_format.hpp,update,107,107,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/snapshot_format.hpp,snapshot_crc32_read_byte_cpp,163,165,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/snapshot_format.hpp,snapshot_crc32,168,170,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,D_BOUNDARY,external/runtime/raw-pointer boundary
+src/deptran/raft/snapshot_format.hpp,snapshot_get_header_cpp,177,180,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/snapshot_format.hpp,snapshot_serialize_cpp,217,223,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/snapshot_format.hpp,snapshot_deserialize_cpp,276,281,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/snapshot_format.hpp,Serialize,371,377,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,D_BOUNDARY,external/runtime/raw-pointer boundary
+src/deptran/raft/snapshot_format.hpp,Deserialize,397,401,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,D_BOUNDARY,external/runtime/raw-pointer boundary
+src/deptran/raft/snapshot_format.hpp,GetHeader,415,415,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,D_BOUNDARY,external/runtime/raw-pointer boundary
+src/deptran/raft/snapshot_format.hpp,GetCurrentTimeMs,425,425,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/snapshot_manager.hpp,is_valid,11,57,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/snapshot_manager.hpp,to_string,14,61,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/snapshot_manager.hpp,defaults,82,122,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/snapshot_manager.hpp,for_replica,85,151,RUST_DSL,False,DSL_SAFE,A_ALREADY_SAFE,Rust DSL function; no explicit unsafe detected
+src/deptran/raft/snapshot_manager.hpp,snapshot_metadata_is_valid,48,50,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/snapshot_manager.hpp,snapshot_metadata_to_string,53,54,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/snapshot_manager.hpp,snapshot_config_defaults,87,89,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary
+src/deptran/raft/snapshot_manager.hpp,snapshot_config_for_replica,98,100,HANDWRITTEN_CPP,False,CPP_UNVERIFIED,B_DIRECT_MIGRATION,ordinary C++ control/data-flow without detected boundary

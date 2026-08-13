@@ -1,0 +1,25 @@
+{
+  "checkout": {
+    "checkout_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/hyper-fca07bd3937d",
+    "library_target_source": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/hyper-fca07bd3937d/src/lib.rs",
+    "manifest_path": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/hyper-fca07bd3937d/Cargo.toml",
+    "package_name": "hyper",
+    "package_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/hyper-fca07bd3937d",
+    "pinned_reference": "fca07bd3937d4a3a4822372acdf766d0640796af",
+    "production_source_roots": [
+      "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/hyper-fca07bd3937d/src"
+    ],
+    "repository_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/hyper-fca07bd3937d",
+    "source_kind": "git",
+    "source_url": "https://github.com/hyperium/hyper.git",
+    "workspace_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/hyper-fca07bd3937d"
+  },
+  "crate": {
+    "features": [],
+    "name": "hyper",
+    "package": "hyper",
+    "repo": "https://github.com/hyperium/hyper.git",
+    "rev": "fca07bd3937d4a3a4822372acdf766d0640796af",
+    "version": null
+  }
+}

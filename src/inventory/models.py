@@ -5,7 +5,6 @@ from __future__ import annotations
 from dataclasses import asdict, dataclass
 from enum import StrEnum
 
-
 INVENTORY_METHODOLOGY_VERSION = 1
 INVENTORY_METHODOLOGY_VERSION_V2 = 2
 

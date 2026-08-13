@@ -1,0 +1,25 @@
+{
+  "checkout": {
+    "checkout_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/rustix-035acdc416d9",
+    "library_target_source": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/rustix-035acdc416d9/src/lib.rs",
+    "manifest_path": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/rustix-035acdc416d9/Cargo.toml",
+    "package_name": "rustix",
+    "package_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/rustix-035acdc416d9",
+    "pinned_reference": "035acdc416d9465abc937bd8cd6a0031afc170aa",
+    "production_source_roots": [
+      "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/rustix-035acdc416d9/src"
+    ],
+    "repository_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/rustix-035acdc416d9",
+    "source_kind": "git",
+    "source_url": "https://github.com/bytecodealliance/rustix.git",
+    "workspace_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/rustix-035acdc416d9"
+  },
+  "crate": {
+    "features": [],
+    "name": "rustix",
+    "package": "rustix",
+    "repo": "https://github.com/bytecodealliance/rustix.git",
+    "rev": "035acdc416d9465abc937bd8cd6a0031afc170aa",
+    "version": null
+  }
+}

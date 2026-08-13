@@ -4,9 +4,9 @@ import json
 import unittest
 
 from harness.models import (
+    AgentAttempt,
     AgentRequest,
     AgentResponse,
-    AgentAttempt,
     AttemptPurpose,
     ExperimentResult,
     ExperimentState,

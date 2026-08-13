@@ -1,0 +1,17 @@
+{
+  "command": [],
+  "help_command": [
+    "count-unsafe",
+    "--help"
+  ],
+  "help_return_code": null,
+  "machine_readable": false,
+  "notes": [],
+  "raw_output_path": null,
+  "return_code": null,
+  "status": "TOOL_UNAVAILABLE",
+  "stderr_path": null,
+  "stdout_path": null,
+  "tool": "count-unsafe",
+  "version": null
+}

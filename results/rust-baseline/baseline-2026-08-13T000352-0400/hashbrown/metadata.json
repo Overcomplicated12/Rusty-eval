@@ -1,0 +1,25 @@
+{
+  "checkout": {
+    "checkout_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/hashbrown-8d9d6c51fe1f",
+    "library_target_source": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/hashbrown-8d9d6c51fe1f/src/lib.rs",
+    "manifest_path": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/hashbrown-8d9d6c51fe1f/Cargo.toml",
+    "package_name": "hashbrown",
+    "package_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/hashbrown-8d9d6c51fe1f",
+    "pinned_reference": "8d9d6c51fe1f9a349f4981c8ef2f69359cd2e708",
+    "production_source_roots": [
+      "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/hashbrown-8d9d6c51fe1f/src"
+    ],
+    "repository_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/hashbrown-8d9d6c51fe1f",
+    "source_kind": "git",
+    "source_url": "https://github.com/rust-lang/hashbrown.git",
+    "workspace_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/hashbrown-8d9d6c51fe1f"
+  },
+  "crate": {
+    "features": [],
+    "name": "hashbrown",
+    "package": "hashbrown",
+    "repo": "https://github.com/rust-lang/hashbrown.git",
+    "rev": "8d9d6c51fe1f9a349f4981c8ef2f69359cd2e708",
+    "version": null
+  }
+}

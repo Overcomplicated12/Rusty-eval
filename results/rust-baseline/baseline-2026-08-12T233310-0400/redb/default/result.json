@@ -1,0 +1,62 @@
+{
+  "all_features_enabled": false,
+  "crate_name": "redb",
+  "default_features_enabled": true,
+  "enabled_features": [],
+  "experiment_id": "baseline-2026-08-12T233310-0400",
+  "failures": [],
+  "mode": "default",
+  "package": "redb",
+  "revision": "dea77f0f0653c69aba3487846589ec7e77ceb5a1",
+  "rust_toolchain": {
+    "cargo": "cargo 1.91.0 (ea2d97820 2025-10-10)",
+    "git": "git version 2.53.0",
+    "rustc": "rustc 1.91.0 (f8297e351 2025-10-28)"
+  },
+  "scan_date": "2026-08-12T23:33:10-04:00",
+  "scan_status": "OK",
+  "scanner_version": "rust-baseline-source-v1",
+  "schema_version": "rust-baseline-v1",
+  "source_checkout": {
+    "checkout_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/redb-dea77f0f0653",
+    "library_target_source": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/redb-dea77f0f0653/src/lib.rs",
+    "manifest_path": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/redb-dea77f0f0653/Cargo.toml",
+    "package_name": "redb",
+    "package_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/redb-dea77f0f0653",
+    "pinned_reference": "dea77f0f0653c69aba3487846589ec7e77ceb5a1",
+    "production_source_roots": [
+      "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/redb-dea77f0f0653/src"
+    ],
+    "repository_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/redb-dea77f0f0653",
+    "source_kind": "git",
+    "source_url": "https://github.com/cberner/redb.git",
+    "workspace_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/redb-dea77f0f0653"
+  },
+  "source_scan_status": "OK",
+  "summary": {
+    "count_unsafe_status": "TOOL_UNAVAILABLE",
+    "crate": "redb",
+    "files_with_unsafe": 5,
+    "functions_safe": 1522,
+    "functions_total": 1547,
+    "functions_unsafe_any": 25,
+    "functions_unsafe_declared": 9,
+    "functions_with_unsafe": 21,
+    "functions_without_explicit_unsafe_pct": 98.384,
+    "geiger_status": "TOOL_UNAVAILABLE",
+    "mode": "default",
+    "nonblank_loc": 25463,
+    "physical_loc": 28410,
+    "production_files": 44,
+    "revision": "dea77f0f0653c69aba3487846589ec7e77ceb5a1",
+    "safe_function_pct": 98.384,
+    "scan_status": "OK",
+    "top5_unsafe_block_concentration_pct": 100.0,
+    "top5_unsafe_concentration_pct": 100.0,
+    "unsafe_blocks": 24,
+    "unsafe_file_pct": 11.3636,
+    "unsafe_loc_estimate": 177,
+    "unsafe_loc_pct_estimate": 0.623
+  },
+  "unsafe_category_annotations": []
+}

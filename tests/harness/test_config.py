@@ -6,7 +6,6 @@ from pathlib import Path
 
 from harness.config import ConfigError, load_config
 
-
 VALID = '''workspace_root = ".worktrees"
 [application]
 name = "synthetic"

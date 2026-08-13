@@ -9,8 +9,12 @@ from unittest.mock import patch
 from rust_baseline.cargo import resolve_package_library_target
 from rust_baseline.config import ConfigError, load_config
 from rust_baseline.report import create_experiment_id
-from rust_baseline.source_scan import iter_production_rust_files, scan_rust_file, scan_source_tree, strip_non_code
-
+from rust_baseline.source_scan import (
+    iter_production_rust_files,
+    scan_rust_file,
+    scan_source_tree,
+    strip_non_code,
+)
 
 FIXTURE_ROOT = Path(__file__).parent / "fixtures" / "rust_baseline" / "sample_crate"
 REDB_AUDIT_ROOT = Path(__file__).parents[1] / ".rust-baseline-work" / "sources" / "redb-dea77f0f0653"

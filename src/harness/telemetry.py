@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from collections import defaultdict
 
-from .models import AgentAttempt, AttemptPurpose, TokenSource, TokenUsage
+from .models import AgentAttempt, TokenSource, TokenUsage
 
 
 def aggregate_tokens(attempts: list[AgentAttempt]) -> TokenUsage:

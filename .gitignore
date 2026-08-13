@@ -24,3 +24,5 @@ tmp/
 
 # Generated large/raw logs
 results/**/logs/
+
+.rust-baseline-work/sources

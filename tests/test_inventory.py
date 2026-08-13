@@ -9,9 +9,8 @@ import unittest
 from pathlib import Path
 
 from inventory.inventory import sample, scan, write_outputs
-from inventory.models import Bucket, INVENTORY_METHODOLOGY_VERSION
+from inventory.models import INVENTORY_METHODOLOGY_VERSION, Bucket
 from inventory.rules import classify
-
 
 FIXTURE = Path(__file__).parent / "fixtures" / "inventory_v1.c"
 

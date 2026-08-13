@@ -7,7 +7,6 @@ from pathlib import Path
 
 from .models import FileSummary, SourceMetrics
 
-
 _EXCLUDED_DIRS = {
     ".git",
     ".hg",

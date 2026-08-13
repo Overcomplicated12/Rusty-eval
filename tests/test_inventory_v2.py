@@ -7,8 +7,7 @@ import unittest
 from pathlib import Path
 
 from inventory.inventory_v2 import scan
-from inventory.models import Bucket, INVENTORY_METHODOLOGY_VERSION_V2
-
+from inventory.models import INVENTORY_METHODOLOGY_VERSION_V2, Bucket
 
 FIXTURE = Path(__file__).parent / "fixtures" / "inventory_v2_adversarial.c"
 

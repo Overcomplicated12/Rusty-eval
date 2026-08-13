@@ -1,0 +1,21 @@
+{
+  "command": [],
+  "help_command": [
+    "cargo",
+    "geiger",
+    "--help"
+  ],
+  "help_return_code": 101,
+  "machine_readable": false,
+  "notes": [
+    "cargo geiger help failed",
+    "error: no such command: `geiger`\n\nhelp: view all installed commands with `cargo --list`\nhelp: find a package to install `geiger` with `cargo search cargo-geiger`"
+  ],
+  "raw_output_path": null,
+  "return_code": null,
+  "status": "TOOL_UNAVAILABLE",
+  "stderr_path": null,
+  "stdout_path": null,
+  "tool": "cargo-geiger",
+  "version": null
+}

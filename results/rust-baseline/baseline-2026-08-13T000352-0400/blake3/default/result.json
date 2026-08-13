@@ -1,0 +1,62 @@
+{
+  "all_features_enabled": false,
+  "crate_name": "blake3",
+  "default_features_enabled": true,
+  "enabled_features": [],
+  "experiment_id": "baseline-2026-08-13T000352-0400",
+  "failures": [],
+  "mode": "default",
+  "package": "blake3",
+  "revision": "77b257eee7da5cd608eaf6be8343d3a4c9776af2",
+  "rust_toolchain": {
+    "cargo": "cargo 1.91.0 (ea2d97820 2025-10-10)",
+    "git": "git version 2.53.0",
+    "rustc": "rustc 1.91.0 (f8297e351 2025-10-28)"
+  },
+  "scan_date": "2026-08-13T00:03:52-04:00",
+  "scan_status": "OK",
+  "scanner_version": "rust-baseline-source-v1",
+  "schema_version": "rust-baseline-v1",
+  "source_checkout": {
+    "checkout_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/blake3-77b257eee7da",
+    "library_target_source": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/blake3-77b257eee7da/src/lib.rs",
+    "manifest_path": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/blake3-77b257eee7da/Cargo.toml",
+    "package_name": "blake3",
+    "package_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/blake3-77b257eee7da",
+    "pinned_reference": "77b257eee7da5cd608eaf6be8343d3a4c9776af2",
+    "production_source_roots": [
+      "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/blake3-77b257eee7da/src"
+    ],
+    "repository_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/blake3-77b257eee7da",
+    "source_kind": "git",
+    "source_url": "https://github.com/BLAKE3-team/BLAKE3.git",
+    "workspace_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/blake3-77b257eee7da"
+  },
+  "source_scan_status": "OK",
+  "summary": {
+    "count_unsafe_status": "TOOL_UNAVAILABLE",
+    "crate": "blake3",
+    "files_with_unsafe": 12,
+    "functions_safe": 164,
+    "functions_total": 260,
+    "functions_unsafe_any": 96,
+    "functions_unsafe_declared": 85,
+    "functions_with_unsafe": 96,
+    "functions_without_explicit_unsafe_pct": 63.0769,
+    "geiger_status": "TOOL_UNAVAILABLE",
+    "mode": "default",
+    "nonblank_loc": 6582,
+    "physical_loc": 7196,
+    "production_files": 18,
+    "revision": "77b257eee7da5cd608eaf6be8343d3a4c9776af2",
+    "safe_function_pct": 63.0769,
+    "scan_status": "OK",
+    "top5_unsafe_block_concentration_pct": 84.127,
+    "top5_unsafe_concentration_pct": 88.3668,
+    "unsafe_blocks": 126,
+    "unsafe_file_pct": 66.6667,
+    "unsafe_loc_estimate": 1745,
+    "unsafe_loc_pct_estimate": 24.2496
+  },
+  "unsafe_category_annotations": []
+}

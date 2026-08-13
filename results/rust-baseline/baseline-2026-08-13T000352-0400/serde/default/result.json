@@ -1,0 +1,62 @@
+{
+  "all_features_enabled": false,
+  "crate_name": "serde",
+  "default_features_enabled": true,
+  "enabled_features": [],
+  "experiment_id": "baseline-2026-08-13T000352-0400",
+  "failures": [],
+  "mode": "default",
+  "package": "serde",
+  "revision": "747814f7d5fbab872df3b02f070c165b91bde062",
+  "rust_toolchain": {
+    "cargo": "cargo 1.91.0 (ea2d97820 2025-10-10)",
+    "git": "git version 2.53.0",
+    "rustc": "rustc 1.91.0 (f8297e351 2025-10-28)"
+  },
+  "scan_date": "2026-08-13T00:03:52-04:00",
+  "scan_status": "OK",
+  "scanner_version": "rust-baseline-source-v1",
+  "schema_version": "rust-baseline-v1",
+  "source_checkout": {
+    "checkout_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/serde-747814f7d5fb",
+    "library_target_source": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/serde-747814f7d5fb/serde/src/lib.rs",
+    "manifest_path": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/serde-747814f7d5fb/serde/Cargo.toml",
+    "package_name": "serde",
+    "package_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/serde-747814f7d5fb/serde",
+    "pinned_reference": "747814f7d5fbab872df3b02f070c165b91bde062",
+    "production_source_roots": [
+      "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/serde-747814f7d5fb/serde/src"
+    ],
+    "repository_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/serde-747814f7d5fb",
+    "source_kind": "git",
+    "source_url": "https://github.com/serde-rs/serde.git",
+    "workspace_root": "/home/frankw/projects/rusty-eval/.rust-baseline-work/sources/serde-747814f7d5fb"
+  },
+  "source_scan_status": "OK",
+  "summary": {
+    "count_unsafe_status": "TOOL_UNAVAILABLE",
+    "crate": "serde",
+    "files_with_unsafe": 0,
+    "functions_safe": 388,
+    "functions_total": 388,
+    "functions_unsafe_any": 0,
+    "functions_unsafe_declared": 0,
+    "functions_with_unsafe": 0,
+    "functions_without_explicit_unsafe_pct": 100.0,
+    "geiger_status": "TOOL_UNAVAILABLE",
+    "mode": "default",
+    "nonblank_loc": 4620,
+    "physical_loc": 5200,
+    "production_files": 5,
+    "revision": "747814f7d5fbab872df3b02f070c165b91bde062",
+    "safe_function_pct": 100.0,
+    "scan_status": "OK",
+    "top5_unsafe_block_concentration_pct": null,
+    "top5_unsafe_concentration_pct": null,
+    "unsafe_blocks": 0,
+    "unsafe_file_pct": 0.0,
+    "unsafe_loc_estimate": 0,
+    "unsafe_loc_pct_estimate": 0.0
+  },
+  "unsafe_category_annotations": []
+}
