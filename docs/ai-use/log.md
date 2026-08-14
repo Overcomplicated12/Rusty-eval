@@ -22,3 +22,4 @@
 | [AI-2026-019](prompts/AI-2026-019.md) | 2026-08-13 | Codex | Manual validation of generic inventory function classification on Apache Thrift C++. | Yes | Yes |  | Pending researcher determination |
 | [AI-2026-020](prompts/AI-2026-020.md) | 2026-08-13 | Codex | Manual multi-project source audit of C++ messaging and networking infrastructure for RustyCpp feasibility screening. | Yes | Yes |  | Pending researcher determination |
 | [AI-2026-021](prompts/AI-2026-021.md) | 2026-08-13 | Codex | Manual full-library source audit of six C++ infrastructure-client candidates for RustyCpp feasibility screening. | Yes | Yes |  | Pending researcher determination |
+| [AI-2026-022](prompts/AI-2026-022.md) | 2026-08-14 | Codex | Create isolated V3 C++ inventory boilerplate for future Clang-backed production-function discovery. | Yes | Yes |  | Pending researcher determination |
