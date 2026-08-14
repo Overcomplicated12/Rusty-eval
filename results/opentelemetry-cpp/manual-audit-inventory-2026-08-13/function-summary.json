@@ -1,0 +1,15 @@
+{
+  "application": "opentelemetry-sdk",
+  "application_commit": "5af96de2a0bf65362ced740d40aab531f5d83126",
+  "bucket_counts": {
+    "NEEDS_TRANSPILER": 7,
+    "REFACTOR_THEN_DSL": 6,
+    "TRIVIAL": 96
+  },
+  "functions_migratable_envelope": 102,
+  "functions_migratable_envelope_pct": 93.57798165137615,
+  "functions_total": 109,
+  "inventory_methodology_version": 2,
+  "meets_80_percent_quota": true,
+  "quota_threshold_pct": 80
+}

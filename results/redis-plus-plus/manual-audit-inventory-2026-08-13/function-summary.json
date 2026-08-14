@@ -1,0 +1,15 @@
+{
+  "application": "redis-plus-plus",
+  "application_commit": "397f9c7be0eb82ce92545f259a7f66ab992bd7ee",
+  "bucket_counts": {
+    "NEEDS_TRANSPILER": 71,
+    "REFACTOR_THEN_DSL": 2,
+    "TRIVIAL": 598
+  },
+  "functions_migratable_envelope": 600,
+  "functions_migratable_envelope_pct": 89.41877794336811,
+  "functions_total": 671,
+  "inventory_methodology_version": 2,
+  "meets_80_percent_quota": true,
+  "quota_threshold_pct": 80
+}

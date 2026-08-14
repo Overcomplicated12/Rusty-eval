@@ -1,0 +1,14 @@
+{
+  "application": "prometheus-cpp-core",
+  "application_commit": "458deac15d331ca4ec993d3b88ac8f8f727aae05",
+  "bucket_counts": {
+    "NEEDS_TRANSPILER": 2,
+    "TRIVIAL": 21
+  },
+  "functions_migratable_envelope": 21,
+  "functions_migratable_envelope_pct": 91.30434782608695,
+  "functions_total": 23,
+  "inventory_methodology_version": 2,
+  "meets_80_percent_quota": true,
+  "quota_threshold_pct": 80
+}

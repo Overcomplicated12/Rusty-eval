@@ -1,0 +1,15 @@
+{
+  "application": "pulsar-client",
+  "application_commit": "1d08b2b358db42af2232d17bbe7ccc2937a79bbb",
+  "bucket_counts": {
+    "NEEDS_TRANSPILER": 74,
+    "REFACTOR_THEN_DSL": 27,
+    "TRIVIAL": 544
+  },
+  "functions_migratable_envelope": 571,
+  "functions_migratable_envelope_pct": 88.52713178294573,
+  "functions_total": 645,
+  "inventory_methodology_version": 2,
+  "meets_80_percent_quota": true,
+  "quota_threshold_pct": 80
+}

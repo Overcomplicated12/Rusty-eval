@@ -1,0 +1,15 @@
+{
+  "application": "clickhouse-cpp",
+  "application_commit": "eabb71d261d8143d4a7d0313397529ca9cd5f558",
+  "bucket_counts": {
+    "NEEDS_TRANSPILER": 9,
+    "REFACTOR_THEN_DSL": 12,
+    "TRIVIAL": 128
+  },
+  "functions_migratable_envelope": 140,
+  "functions_migratable_envelope_pct": 93.95973154362416,
+  "functions_total": 149,
+  "inventory_methodology_version": 2,
+  "meets_80_percent_quota": true,
+  "quota_threshold_pct": 80
+}

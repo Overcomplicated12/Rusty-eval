@@ -1,0 +1,15 @@
+{
+  "application": "libpqxx",
+  "application_commit": "2d0a8e6a61ca69eff40205337655eb812a0eebb1",
+  "bucket_counts": {
+    "NEEDS_TRANSPILER": 1,
+    "REFACTOR_THEN_DSL": 1,
+    "TRIVIAL": 35
+  },
+  "functions_migratable_envelope": 36,
+  "functions_migratable_envelope_pct": 97.29729729729729,
+  "functions_total": 37,
+  "inventory_methodology_version": 2,
+  "meets_80_percent_quota": true,
+  "quota_threshold_pct": 80
+}
