@@ -1,0 +1,7 @@
+{
+  "application_commit": "9b10484ca7687af6cc67567df9d457d0f031748e",
+  "inventory_methodology_version": 2,
+  "repository_root": "/tmp/thrift",
+  "repository_url": "https://github.com/apache/thrift.git",
+  "source_dir": "."
+}

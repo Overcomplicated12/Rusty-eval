@@ -1,0 +1,15 @@
+{
+  "application": "thrift",
+  "application_commit": "9b10484ca7687af6cc67567df9d457d0f031748e",
+  "bucket_counts": {
+    "NEEDS_TRANSPILER": 103,
+    "REFACTOR_THEN_DSL": 80,
+    "TRIVIAL": 2248
+  },
+  "functions_migratable_envelope": 2328,
+  "functions_migratable_envelope_pct": 95.76306046894283,
+  "functions_total": 2431,
+  "inventory_methodology_version": 2,
+  "meets_80_percent_quota": true,
+  "quota_threshold_pct": 80
+}

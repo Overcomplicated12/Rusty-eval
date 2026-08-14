@@ -1,0 +1,15 @@
+{
+  "application": "thrift-cpp-core",
+  "application_commit": "9b10484ca7687af6cc67567df9d457d0f031748e",
+  "bucket_counts": {
+    "NEEDS_TRANSPILER": 11,
+    "REFACTOR_THEN_DSL": 11,
+    "TRIVIAL": 427
+  },
+  "functions_migratable_envelope": 438,
+  "functions_migratable_envelope_pct": 97.55011135857461,
+  "functions_total": 449,
+  "inventory_methodology_version": 2,
+  "meets_80_percent_quota": true,
+  "quota_threshold_pct": 80
+}
