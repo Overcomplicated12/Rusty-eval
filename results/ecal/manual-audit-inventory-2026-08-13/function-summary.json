@@ -1,0 +1,15 @@
+{
+  "application": "ecal-core",
+  "application_commit": "652e92f7cda2ab1f2d0056cb296b66c7a30c8fa8",
+  "bucket_counts": {
+    "NEEDS_TRANSPILER": 14,
+    "REFACTOR_THEN_DSL": 10,
+    "TRIVIAL": 360
+  },
+  "functions_migratable_envelope": 370,
+  "functions_migratable_envelope_pct": 96.35416666666667,
+  "functions_total": 384,
+  "inventory_methodology_version": 2,
+  "meets_80_percent_quota": true,
+  "quota_threshold_pct": 80
+}

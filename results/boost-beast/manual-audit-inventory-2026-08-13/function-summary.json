@@ -1,0 +1,15 @@
+{
+  "application": "boost-beast",
+  "application_commit": "7c1e061f91e2ef542217b76286c314d006c0c8fc",
+  "bucket_counts": {
+    "NEEDS_TRANSPILER": 48,
+    "REFACTOR_THEN_DSL": 9,
+    "TRIVIAL": 350
+  },
+  "functions_migratable_envelope": 359,
+  "functions_migratable_envelope_pct": 88.20638820638821,
+  "functions_total": 407,
+  "inventory_methodology_version": 2,
+  "meets_80_percent_quota": true,
+  "quota_threshold_pct": 80
+}

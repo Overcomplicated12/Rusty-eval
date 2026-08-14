@@ -1,0 +1,7 @@
+{
+  "application_commit": "7c1e061f91e2ef542217b76286c314d006c0c8fc",
+  "inventory_methodology_version": 2,
+  "repository_root": "/tmp/rusty-eval-audit/beast",
+  "repository_url": null,
+  "source_dir": "include/boost/beast"
+}

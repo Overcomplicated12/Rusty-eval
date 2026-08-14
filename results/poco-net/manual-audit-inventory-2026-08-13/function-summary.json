@@ -1,0 +1,15 @@
+{
+  "application": "poco-net",
+  "application_commit": "a2cf8ccfc48e858d0af493d58e695c5475bc6780",
+  "bucket_counts": {
+    "NEEDS_TRANSPILER": 7,
+    "REFACTOR_THEN_DSL": 5,
+    "TRIVIAL": 155
+  },
+  "functions_migratable_envelope": 160,
+  "functions_migratable_envelope_pct": 95.80838323353294,
+  "functions_total": 167,
+  "inventory_methodology_version": 2,
+  "meets_80_percent_quota": true,
+  "quota_threshold_pct": 80
+}
