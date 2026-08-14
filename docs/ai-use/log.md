@@ -19,3 +19,6 @@
 | [AI-2026-016](prompts/AI-2026-016.md) | 2026-08-12 | Codex | Read-only LevelDB C++ RustyCpp inline-Rust DSL feasibility preflight | Yes | No |  | Pending researcher determination |
 | [AI-2026-017](prompts/AI-2026-017.md) | 2026-08-12 | codex | Implement reproducible Rust systems-library baseline scanner with tests/docs | Yes | Yes |  | Pending researcher determination |
 | [AI-2026-018](prompts/AI-2026-018.md) | 2026-08-12 | Codex | Fix Rust baseline package scope and function declaration analysis using the redb manual audit regression | Yes | Yes |  | Pending researcher determination |
+| [AI-2026-019](prompts/AI-2026-019.md) | 2026-08-13 | Codex | Manual validation of generic inventory function classification on Apache Thrift C++. | Yes | Yes |  | Pending researcher determination |
+| [AI-2026-020](prompts/AI-2026-020.md) | 2026-08-13 | Codex | Manual multi-project source audit of C++ messaging and networking infrastructure for RustyCpp feasibility screening. | Yes | Yes |  | Pending researcher determination |
+| [AI-2026-021](prompts/AI-2026-021.md) | 2026-08-13 | Codex | Manual full-library source audit of six C++ infrastructure-client candidates for RustyCpp feasibility screening. | Yes | Yes |  | Pending researcher determination |
