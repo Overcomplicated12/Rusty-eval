@@ -1,5 +1,7 @@
 project = "leveldb"
 repo_path = "../../../../leveldb"
 compile_commands_path = "../../../../leveldb/build/compile_commands.json"
-include_paths = ["../../../../leveldb/include"]
-exclude_paths = ["../../../../leveldb/util", "../../../../leveldb/db"]
+
+[scope]
+include = ["**"]
+exclude = ["util/**", "db/**"]

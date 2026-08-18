@@ -8,7 +8,8 @@ import json
 from pathlib import Path
 
 from .config import InventoryConfig
-from .schema import FunctionRecord
+from .schema import FunctionRecord, RawFunctionRecord
+from .scope import ScopeExclusion
 
 
 def output_dir(repository_root: Path, project: str, run_id: str) -> Path:
@@ -31,8 +32,7 @@ def write_placeholder_reports(
         "config_path": str(config.config_path),
         "repo_path": str(config.repo_path),
         "compile_commands_path": str(config.compile_commands_path),
-        "include_paths": [str(path) for path in config.include_paths],
-        "exclude_paths": [str(path) for path in config.exclude_paths],
+        "scope": {"include": list(config.scope_include), "exclude": list(config.scope_exclude)},
     }
     coverage = {"status": "placeholder", "translation_units_seen": 0, "translation_units_parsed": 0}
     summary = {"status": "placeholder", "function_count": len(records), "parse_failure_count": 0}
@@ -48,4 +48,60 @@ def write_placeholder_reports(
         f"Project: `{config.project}`\n\n"
         "No Clang AST parsing, production scope filtering, deduplication, or "
         "migration classification has been implemented yet.\n"
+    )
+
+
+def _write_jsonl(path: Path, records: list[dict[str, object]]) -> None:
+    path.write_text("".join(json.dumps(record, sort_keys=True) + "\n" for record in records), encoding="utf-8")
+
+
+def write_inventory_reports(
+    output: Path,
+    config: InventoryConfig,
+    run_id: str,
+    *,
+    scan_directory: Path | None,
+    raw_records: list[RawFunctionRecord],
+    functions: list[FunctionRecord],
+    exclusions: list[ScopeExclusion],
+    coverage: dict[str, object],
+    failures: tuple[dict[str, object], ...],
+) -> None:
+    """Write interpreted inventory artifacts alongside raw observations and failures."""
+    output.mkdir(parents=True, exist_ok=False)
+    generated_at = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    manifest = {
+        "schema_version": 3,
+        "status": "interpreted",
+        "project": config.project,
+        "run_id": run_id,
+        "generated_at": generated_at,
+        "config_path": str(config.config_path),
+        "repo_path": str(config.repo_path),
+        "compile_commands_path": str(config.compile_commands_path),
+        "scan_directory": str(scan_directory) if scan_directory else None,
+        "scope": {"include": list(config.scope_include), "exclude": list(config.scope_exclude)},
+    }
+    summary = {
+        "function_count": len(functions),
+        "parse_failure_count": len(failures),
+        "primary_denominator": coverage["primary_denominator"],
+    }
+    (output / "manifest.json").write_text(json.dumps(manifest, indent=2, sort_keys=True) + "\n")
+    (output / "coverage.json").write_text(json.dumps(coverage, indent=2, sort_keys=True) + "\n")
+    (output / "summary.json").write_text(json.dumps(summary, indent=2, sort_keys=True) + "\n")
+    _write_jsonl(output / "raw_functions.jsonl", [record.to_dict() for record in raw_records])
+    _write_jsonl(output / "functions.jsonl", [record.to_dict() for record in functions])
+    _write_jsonl(output / "exclusions.jsonl", [
+        {"record": exclusion.record.to_dict(), "reason": exclusion.reason, "pattern": exclusion.pattern}
+        for exclusion in exclusions
+    ])
+    _write_jsonl(output / "parse_failures.jsonl", list(failures))
+    (output / "report.md").write_text(
+        "# V3 C++ inventory\n\n"
+        f"Project: `{config.project}`\n\n"
+        f"Translation units selected: {coverage['translation_units_seen']}\n\n"
+        f"Translation units parsed: {coverage['translation_units_parsed']}\n\n"
+        f"Scanner failures: {len(failures)}\n",
+        encoding="utf-8",
     )

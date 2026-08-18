@@ -25,4 +25,7 @@ tmp/
 # Generated large/raw logs
 results/**/logs/
 
+# V3 scanner observations can be hundreds of megabytes; retain them locally.
+results/v3/cpp-inventory/**/*.jsonl
+
 .rust-baseline-work/sources

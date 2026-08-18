@@ -6,39 +6,77 @@ import argparse
 from datetime import datetime, timezone
 from pathlib import Path
 
-from .config import InventoryConfig, load_config
+import json
+
+from .config import load_config
+from .coverage import calculate_coverage
 from .dedup import deduplicate_functions
-from .report import output_dir, write_placeholder_reports
+from .normalize import normalize_records
+from .report import output_dir, write_inventory_reports
+from .runner import scan_directory
+from .schema import RawFunctionRecord
 from .scope import apply_scope
-from .schema import FunctionRecord
 
 
-def discover_functions(config: InventoryConfig) -> list[FunctionRecord]:
-    """Placeholder for future JSONL input from the Clang inventory tool."""
-    del config
-    return []
-
-
-def run_scan(config_path: Path, *, run_id: str | None = None, repository_root: Path | None = None) -> Path:
-    """Create a V3-only placeholder run and return its output directory."""
+def run_scan(
+    config_path: Path,
+    *,
+    directory: Path | None = None,
+    clang_inventory: Path,
+    run_id: str | None = None,
+    repository_root: Path | None = None,
+) -> Path:
+    """Scan compile-database translation units below a directory and return the output path."""
     config = load_config(config_path)
     root = repository_root.resolve() if repository_root else Path.cwd().resolve()
     run_id = run_id or datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
-    records = deduplicate_functions(apply_scope(discover_functions(config), config))
+    result = scan_directory(config, directory=directory, clang_inventory=clang_inventory)
     output = output_dir(root, config.project, run_id)
-    write_placeholder_reports(output, config, records, run_id)
+    raw_records = [RawFunctionRecord.from_mapping(json.loads(line)) for line in result.jsonl.splitlines() if line]
+    normalized_records = normalize_records(raw_records, config.repo_path)
+    scoped = apply_scope(normalized_records, config)
+    functions = deduplicate_functions(scoped.included)
+    coverage = calculate_coverage(
+        translation_units_seen=result.translation_units_seen,
+        translation_units_parsed=result.translation_units_parsed,
+        raw_records=normalized_records,
+        scope_result=scoped,
+        deduplicated_records=functions,
+    )
+    write_inventory_reports(
+        output,
+        config,
+        run_id,
+        scan_directory=directory.resolve() if directory else None,
+        raw_records=raw_records,
+        functions=functions,
+        exclusions=scoped.exclusions,
+        coverage=coverage,
+        failures=result.failures,
+    )
     return output
 
 
 def main(argv: list[str] | None = None) -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     subparsers = parser.add_subparsers(dest="command", required=True)
-    scan = subparsers.add_parser("scan", help="create a placeholder V3 inventory run")
+    scan = subparsers.add_parser(
+        "scan", help="scan a directory with the V3 Clang inventory tool"
+    )
     scan.add_argument("--config", required=True, type=Path)
+    scan.add_argument("--directory", type=Path)
+    scan.add_argument("--clang-inventory", required=True, type=Path)
     scan.add_argument("--run-id")
     args = parser.parse_args(argv)
     if args.command == "scan":
-        print(run_scan(args.config, run_id=args.run_id))
+        print(
+            run_scan(
+                args.config,
+                directory=args.directory,
+                clang_inventory=args.clang_inventory,
+                run_id=args.run_id,
+            )
+        )
 
 
 if __name__ == "__main__":

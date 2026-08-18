@@ -23,3 +23,5 @@
 | [AI-2026-020](prompts/AI-2026-020.md) | 2026-08-13 | Codex | Manual multi-project source audit of C++ messaging and networking infrastructure for RustyCpp feasibility screening. | Yes | Yes |  | Pending researcher determination |
 | [AI-2026-021](prompts/AI-2026-021.md) | 2026-08-13 | Codex | Manual full-library source audit of six C++ infrastructure-client candidates for RustyCpp feasibility screening. | Yes | Yes |  | Pending researcher determination |
 | [AI-2026-022](prompts/AI-2026-022.md) | 2026-08-14 | Codex | Create isolated V3 C++ inventory boilerplate for future Clang-backed production-function discovery. | Yes | Yes |  | Pending researcher determination |
+| [AI-2026-023](prompts/AI-2026-023.md) | 2026-08-16 | Codex | Implement V3 Python inventory runner translation-unit selection and per-TU Clang scanner orchestration | Yes | Yes |  | Pending researcher determination |
+| [AI-2026-024](prompts/AI-2026-024.md) | 2026-08-17 | Codex | Implement normalized V3 C++ inventory interpretation pipeline and auditable denominator reporting | Yes | Yes |  | Pending researcher determination |

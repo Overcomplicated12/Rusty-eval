@@ -1,0 +1,14 @@
+{
+  "deduplicated_functions": 1068,
+  "deduplication_reduction": 3135,
+  "explicit_specializations": 0,
+  "implicit_template_instantiations": 0,
+  "lambdas": 0,
+  "primary_denominator": 1068,
+  "raw_observations": 628487,
+  "scope_excluded_observations": 624284,
+  "scope_included_observations": 4203,
+  "translation_units_failed": 1,
+  "translation_units_parsed": 11,
+  "translation_units_seen": 12
+}

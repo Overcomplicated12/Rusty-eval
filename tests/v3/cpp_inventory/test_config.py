@@ -11,9 +11,10 @@ class ConfigTests(unittest.TestCase):
             root = Path(temporary)
             config = root / "sample.toml"
             config.write_text(
-                'project = "sample"\nrepo_path = "repo"\ncompile_commands_path = "repo/compile_commands.json"\ninclude_paths = ["repo/include"]\nexclude_paths = ["repo/tests"]\n'
+                'project = "sample"\nrepo_path = "repo"\ncompile_commands_path = "repo/compile_commands.json"\n[scope]\ninclude = ["src/**"]\nexclude = ["src/generated/**"]\n'
             )
             loaded = load_config(config)
             self.assertEqual(loaded.project, "sample")
             self.assertEqual(loaded.repo_path, root / "repo")
-            self.assertEqual(loaded.include_paths, (root / "repo/include",))
+            self.assertEqual(loaded.scope_include, ("src/**",))
+            self.assertEqual(loaded.scope_exclude, ("src/generated/**",))
