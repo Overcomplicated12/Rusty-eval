@@ -5,6 +5,7 @@
 #include <sstream>
 #include <string>
 #include <system_error>
+#include <unordered_map>
 #include <utility>
 #include <vector>
 
@@ -18,6 +19,7 @@
 #include "clang/Tooling/JSONCompilationDatabase.h"
 #include "clang/Tooling/Tooling.h"
 #include "clang/Index/USRGeneration.h"
+#include "clang/AST/ExprCXX.h"
 
 #include "llvm/ADT/SmallString.h"
 #include "llvm/ADT/SmallVector.h"
@@ -73,7 +75,24 @@ static bool hasExistingResponseFiles(
 }
 
 
+static bool isLambdaFunction(const FunctionDecl* func) {
+  const auto* method = dyn_cast<CXXMethodDecl>(func);
+
+  if (!method) {
+    return false;
+  }
+
+  return method->getParent()->isLambda() &&
+         method->isOverloadedOperator() &&
+         method->getOverloadedOperator() == OO_Call;
+}
+
+
 static std::string getFunctionKind(const FunctionDecl* func) {
+  if (isLambdaFunction(func)) {
+    return "lambda";
+  }
+
   if (isa<CXXConstructorDecl>(func)) {
     return "constructor";
   }
@@ -98,17 +117,6 @@ static std::string getFunctionKind(const FunctionDecl* func) {
 }
 
 
-static bool isLambdaFunction(const FunctionDecl* func) {
-  const auto* method = dyn_cast<CXXMethodDecl>(func);
-
-  if (!method) {
-    return false;
-  }
-
-  return method->getParent()->isLambda();
-}
-
-
 static std::string getUSR(const FunctionDecl* func) {
   llvm::SmallString<256> usr;
 
@@ -126,6 +134,21 @@ class InventoryVisitor
   ASTContext& context;
   llvm::raw_ostream& out;
   std::string translationUnit;
+  std::unordered_map<const CXXRecordDecl*, const LambdaExpr*>
+      lambdaExpressions;
+
+  const LambdaExpr* lambdaExpressionFor(
+      const FunctionDecl* func) const {
+    const auto* method = dyn_cast<CXXMethodDecl>(func);
+    if (!method || !method->getParent()->isLambda()) {
+      return nullptr;
+    }
+
+    const auto found =
+        lambdaExpressions.find(method->getParent());
+    return found == lambdaExpressions.end() ? nullptr :
+        found->second;
+  }
 
  public:
   InventoryVisitor(ASTContext& context,
@@ -135,14 +158,27 @@ class InventoryVisitor
         out(out),
         translationUnit(translationUnit.str()) {}
 
+  bool shouldVisitImplicitCode() const {
+    // Clang models the lambda closure type as implicit, so the default
+    // traversal does not reach its source-level call operator.
+    return true;
+  }
+
+  bool TraverseLambdaExpr(LambdaExpr* lambda) {
+    lambdaExpressions[lambda->getLambdaClass()] = lambda;
+    return RecursiveASTVisitor<InventoryVisitor>::TraverseLambdaExpr(lambda);
+  }
+
   bool VisitFunctionDecl(FunctionDecl* func) {
     // We only care about this specific declaration being a definition.
     if (!func->isThisDeclarationADefinition()) {
       return true;
     }
 
-    // Ignore compiler-generated declarations.
-    if (func->isImplicit()) {
+    // Retain a lambda call operator if Clang surfaces one as implicit; other
+    // implicit declarations are compiler-generated and remain out of scope.
+    bool isLambda = isLambdaFunction(func);
+    if (func->isImplicit() && !isLambda) {
       return true;
     }
 
@@ -150,6 +186,16 @@ class InventoryVisitor
 
     SourceLocation begin = func->getBeginLoc();
     SourceLocation end = func->getEndLoc();
+
+    // The lambda call operator provides identity and semantic properties, but
+    // its declaration location is at operator().  Point source spans at the
+    // user-written lambda expression so downstream tools target its '['.
+    if (isLambda) {
+      if (const LambdaExpr* lambda = lambdaExpressionFor(func)) {
+        begin = lambda->getBeginLoc();
+        end = lambda->getEndLoc();
+      }
+    }
 
     if (begin.isInvalid()) {
       return true;
@@ -200,9 +246,6 @@ class InventoryVisitor
         func->getTemplateSpecializationKind() ==
         TSK_ExplicitSpecialization;
 
-    bool isLambda =
-        isLambdaFunction(func);
-
     bool isVirtual = false;
     bool isStaticMethod = false;
     std::string parentType;
@@ -243,7 +286,7 @@ class InventoryVisitor
     record["end_offset"] = endOffset;
 
     record["is_definition"] = true;
-    record["is_implicit"] = false;
+    record["is_implicit"] = func->isImplicit();
 
     record["is_template"] =
         isTemplate;

@@ -1,10 +1,10 @@
 {
   "compile_commands_path": "/home/frankw/projects/mako/build/compile_commands.json",
-  "config_path": "/tmp/tmp.CyYfc8eXJ7",
-  "generated_at": "2026-08-18T00:32:26+00:00",
-  "project": "mako-raft",
+  "config_path": "/tmp/mako-dev-raft-inventory.toml",
+  "generated_at": "2026-08-18T01:17:15+00:00",
+  "project": "mako-dev-raft",
   "repo_path": "/home/frankw/projects/mako",
-  "run_id": "mako-raft-test-5",
+  "run_id": "mako-dev-raft-2",
   "scan_directory": "/home/frankw/projects/mako/src/deptran/raft",
   "schema_version": 3,
   "scope": {

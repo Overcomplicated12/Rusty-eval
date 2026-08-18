@@ -1,0 +1,17 @@
+{
+  "compile_commands_path": "/home/frankw/projects/mako/build/compile_commands.json",
+  "config_path": "/tmp/mako-dev-raft-inventory.toml",
+  "generated_at": "2026-08-18T02:10:56+00:00",
+  "project": "mako-dev-raft",
+  "repo_path": "/home/frankw/projects/mako",
+  "run_id": "mako-dev-raft-3",
+  "scan_directory": "/home/frankw/projects/mako/src/deptran/raft",
+  "schema_version": 3,
+  "scope": {
+    "exclude": [],
+    "include": [
+      "src/deptran/raft/**"
+    ]
+  },
+  "status": "interpreted"
+}

@@ -1,6 +1,6 @@
-# V3 C++ inventory scanner run
+# V3 C++ inventory
 
-Project: `mako-raft`
+Project: `mako-dev-raft`
 
 Translation units selected: 12
 
